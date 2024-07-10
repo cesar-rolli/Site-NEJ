@@ -4,6 +4,10 @@ export const ReemKufiFont = css`
   @import url('https://fonts.googleapis.com/css2?family=Reem+Kufi:wght@400..700&display=swap');
 `;
 
+export const RobotoFont = css`
+  @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@1,700&display=swap');
+`;
+
 export const GlobalStyles = createGlobalStyle`
   * {
     margin: 0;
