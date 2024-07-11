@@ -43,9 +43,11 @@ export const GlobalStyles = createGlobalStyle`
     background: var(--branco);
   }
   :root {
-    --preto: #000;
+    --preto: #0D0E13;
     --branco: #D9D9D9;
     --laranja: #C75D25;
     --azul: #1B5E82;
+    --cinza-claro: #C7C7C7;
+    --cinza-escuro: #8A8A8A;
   }
 `;

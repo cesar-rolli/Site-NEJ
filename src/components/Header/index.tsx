@@ -1,6 +1,6 @@
 import React, { useState } from "react";
+
 import { 
-  Blackbox,
   CloseIcon,
   ContainerHeader, 
   ContainerMenu, 
@@ -11,7 +11,9 @@ import {
   MenuList,
   MenuOptions,
   MenuList2,
-  OptionButton
+  OptionButton,
+  Links,
+  ImgLink
 } from "./styles";
 
 import nlaranja from '../../assets/nlaranja.png';
@@ -40,7 +42,7 @@ const Header: React.FC = () => {
 	return (
     <>
     <ContainerHeader className={menuPage ? "" : "menuPage"}>
-      <Logo src={nlaranja} />
+      <ImgLink to={"/"}><Logo src={nlaranja} /></ImgLink>
         <MenuList 
           onMouseEnter={rotate}
           onMouseLeave={rotate}
@@ -52,7 +54,7 @@ const Header: React.FC = () => {
 
     <ContainerMenu className={menuPage ? "" : "menuPage"}>
     <Header2>
-      <Logo src={nej} />
+      <ImgLink to={"/"}><Logo src={nej} /></ImgLink>
       <MenuList2
         onMouseEnter={rotate}
         onMouseLeave={rotate}
@@ -63,12 +65,11 @@ const Header: React.FC = () => {
     </Header2>
     <LeftImage src={foto1} className={menuPage ? "" : "menuPage"}/>
     <MenuOptions className={menuPage ? "" : "menuPage"}>
-      <OptionButton className={"pagina"}>Rede NEJ POA</OptionButton>
-      <OptionButton className={"pagina"}>Eventos</OptionButton>
-      <OptionButton className={"pagina"}>Nossos parceiros</OptionButton>
-      <OptionButton className={"pagina"}>Sobre nós</OptionButton>
-      <OptionButton className={"pagina"}>Contato</OptionButton>
-      <Blackbox />
+      <Links to={"/"}>Home</Links>
+      <Links to={"/rede-nej-poa"}>Rede NEJ POA</Links>
+      <Links to={"/eventos"}>Eventos</Links>
+      <Links to={"/nossos-parceiros"}>Nossos parceiros</Links>
+      <Links to={"/sobre-nos"}>Sobre nós</Links>
       <OptionButton 
         className={"link"}
         href="https://www.instagram.com/nejpoa"

@@ -1,4 +1,5 @@
 import styled, { css } from "styled-components";
+import { Link } from "react-router-dom";
 
 import { CropSquare, Close } from "../../styles/Icons";
 
@@ -12,6 +13,7 @@ export const ContainerHeader = styled.div`
   justify-content: space-between;
   z-index: 2;
   transition: transform 1s;
+  top: 0;
   
   &.menuPage {
     transform: translateY(-200px);
@@ -30,8 +32,8 @@ export const MenuList = styled.div`
   justify-content: center;
 
   > p {
-    font-size: 20px;
-    color: #C75D25;
+    font-size: 3vh;
+    color: var(--laranja);
     font-family: "Reem Kufi", sans-serif;
   }
 `;
@@ -39,7 +41,7 @@ export const MenuList = styled.div`
 export const MenuIcon = styled(CropSquare)`
   width: 32px;
   height: 32px;
-  color: #C75D25;
+  color: var(--laranja);
   margin-left: 16px;
   transform: rotate(0deg);
   transition: transform 0.5s;
@@ -48,6 +50,9 @@ export const MenuIcon = styled(CropSquare)`
     transform: rotate(90deg);
     transition: transform 0.5s;
   }
+`;
+
+export const ImgLink = styled(Link)`
 `;
 
 export const Logo = styled.img`
@@ -61,7 +66,7 @@ export const ContainerMenu = styled.div`
   position: fixed;
   display: flex;
   flex-direction: row;
-  background: #0d0e13;
+  background: var(--preto);
   height: 100vh;
   width: 100vw;
 
@@ -91,8 +96,8 @@ export const MenuList2 = styled.div`
   justify-content: center;
 
   > p {
-    font-size: 20px;
-    color: #DFD9D9;
+    font-size: 3vh;
+    color: var(--branco);
     font-family: "Reem Kufi", sans-serif;
   }
 `;
@@ -112,7 +117,7 @@ export const Header2 = styled.div`
 export const CloseIcon = styled(Close)`
   width: 32px;
   height: 32px;
-  fill: #DFD9D9;
+  fill: var(--branco);
   margin-left: 16px;
   transform: rotate(0deg);
   transition: transform 0.5s;
@@ -141,10 +146,23 @@ export const MenuOptions = styled.div`
   }
 `;
 
+export const Links = styled(Link)`
+  text-decoration: none;
+  font-family: "Reem Kufi", sans-serif;
+  color: var(--branco);  
+  width: 20vw;
+  left: 60vw;
+  position: relative;
+  font-size: 5vh;
+
+  &:hover {
+    text-decoration: 2px underline var(--branco);
+  }
+`;
+
 export const OptionButton = styled.a`
   cursor: pointer;
   padding-left: 60vw;
-  margin-top: 16px;
   position: relative;
   left: 60vw;
   padding: 0;
@@ -154,24 +172,20 @@ export const OptionButton = styled.a`
   text-decoration: none;
   
   &:hover {
-    text-decoration: 2px underline #fff;
+    text-decoration: 2px underline var(--branco);
   }
 
   &.pagina {
     width: 20vw;
     font-size: 5vh;
-    color: #DFD9D9;  
+    color: var(--branco);  
   }
 
   &.link {
     width: 8vw;
     font-size: 2vh;
-    color: #8a8a8a;
+    color: var(--cinza-escuro);
   }
-`;
-
-export const Blackbox = styled.div`
-  height: 5vh;
 `;
 
 export const LeftImage = styled.img`

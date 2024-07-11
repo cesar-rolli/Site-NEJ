@@ -1,22 +1,14 @@
-import React, { useState } from "react";
-// import { Link } from "react-router-dom";
+import React from "react";
 
 import { 
   BlocoParceiros,
   ContainerParceiros,
   Container, 
-  ContainerContato, 
   Divisor, 
   ContainerRede, 
-  InstagramIcon, 
-  LinkedinIcon, 
-  ListaContatos, 
   LogoParceiro, 
-  MailIcon, 
-  MeioContato, 
   ContainerMissao, 
   Missao,
-  NejPoaContato, 
   ContainerSobreNos, 
   SobreNosImg, 
   ValoresRede, 
@@ -26,30 +18,16 @@ import {
 } from "./styles";
 
 import Header from "../../components/Header";
+import Contato from "../../components/Contato";
 
 import bain from '../../assets/bain.png';
 import bat from '../../assets/bat.png';
 import lojasqq from '../../assets/lojasqq.png';
 import v4 from '../../assets/V4.png';
 import sobrenos from '../../assets/sobre-nos-1.png';
-import nejpoa from '../../assets/nejpoa-colorido.png';
 import gasometro from '../../assets/teste.png';
 
 const Home: React.FC = () => {
-  const [fillInstagram, setFillInstagram] = useState(true);
-  const [fillLinkedin, setFillLinkedin] = useState(true);
-  const [fillMail, setFillMail] = useState(true);
-
-  const fillInstagramIcon = () => {
-    setFillInstagram(!fillInstagram);
-  }
-  const fillLinkedinIcon = () => {
-    setFillLinkedin(!fillLinkedin);
-  }
-  const fillMailIcon = () => {
-    setFillMail(!fillMail);
-  }
-
   return (
     <Container>
       <Header />
@@ -74,13 +52,13 @@ const Home: React.FC = () => {
           <Gasometro src={gasometro} />
         </ContainerMissao>
 
-        <h1>Eventos</h1>
         <ContainerEventos>
+          <h1>Eventos</h1>
           
         </ContainerEventos>
 
-        <h1>Nossos Parceiros</h1>
         <ContainerParceiros>
+          <h1>Nossos Parceiros</h1>
           <BlocoParceiros>
             <a href='https://bit.ly/3zkQiCG'>
               <LogoParceiro src={bain}/>
@@ -103,35 +81,10 @@ const Home: React.FC = () => {
           <h1>Sobre Nós</h1>
           <h2>Somos pós juniores das EJs da nossa Rede, unidos pelo propósito do NEJ POA, dando continuidade a uma jornada de liderança e empreendedorismo, agora voltada ao desenvolvimento das empresas juniores. <br/><br/>
             Nosso dia a dia é corrido, somos de universidades, cursos, EJ's e principalmente realidades diferentes, mas nos unimos em prol de um objetivo maior. Somos quando estamos juntos, nos apoiamos e comemoramos a cada vitória.</h2>
+          <SobreNosImg src={sobrenos}/>
         </ContainerSobreNos>
-        <SobreNosImg src={sobrenos}/>
 
-        <ContainerContato>
-          <NejPoaContato src={nejpoa} />
-          <ListaContatos>
-            <MeioContato 
-              href="https://www.instagram.com/nejpoa"
-              onMouseEnter={fillInstagramIcon}
-              onMouseLeave={fillInstagramIcon}>
-              <InstagramIcon className={fillInstagram ? "" : "fillInstagramIcon"}/>
-              <h1>@nejpoa</h1>
-            </MeioContato>
-            <MeioContato 
-              href="https://www.linkedin.com/company/nejpoa"
-              onMouseEnter={fillLinkedinIcon}
-              onMouseLeave={fillLinkedinIcon}>
-              <LinkedinIcon className={fillLinkedin ? "" : "fillLinkedinIcon"}/>
-              <h1>linkedin.com/company/nejpoa</h1>
-            </MeioContato>
-            <MeioContato
-              onMouseEnter={fillMailIcon}
-              onMouseLeave={fillMailIcon}>
-              <MailIcon className={fillMail ? "" : "fillMailIcon"}/>
-              <h1>contato@nejpoa.com.br</h1>
-            </MeioContato>
-          </ListaContatos>
-        </ContainerContato>
-        <p>2024 | Núcleo das Empresas Juniores de Porto Alegre </p>
+        <Contato />
       </Wrapper>
     </Container>
   );

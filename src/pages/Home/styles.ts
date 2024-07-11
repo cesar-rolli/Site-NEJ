@@ -1,19 +1,9 @@
-import styled, {  } from "styled-components";
-
-import {
-  Instagram,
-  Linkedin,
-  MailOutline
-} from "../../styles/Icons";
+import styled from "styled-components";
 
 export const Container = styled.div`
-	position: absolute;
-
 	display: flex;
-	justify-content: center;
+	align-items: center;
 	width: 100vw;
-	height: 100vh;
-
 `;
 
 export const Wrapper = styled.div`
@@ -130,11 +120,24 @@ export const Divisor = styled.div`
 export const Gasometro = styled.img`
   width: 40vw;
 	height: 102.2vh;
+	border-radius: 0 0 0 3vw;
 `;
 
 // EVENTOS
 export const ContainerEventos = styled.div `
+	display: flex;
+	flex-direction: column;
+	width: 100vw;
+	height: 100vh;
+	background: var(--cinza-claro);
+	align-items: center;
+  margin-top: 10vh;
 
+	> h1 {
+    font-size: 12vh;
+    color: var(--preto);
+    font-family: "Reem Kufi", sans-serif;
+	}
 `;
 
 // PARCEIROS
@@ -143,9 +146,10 @@ export const ContainerParceiros = styled.div`
   flex-direction: column;
   top: 30vh;
   width: 70vw;
+	align-items: center;
   
   > h1 {
-    font-size: 16vh;
+    font-size: 12vh;
     color: var(--laranja);
     margin: 0;
   }
@@ -155,6 +159,7 @@ export const BlocoParceiros = styled.div`
   display: flex;
   flex-direction: row;
   justify-content: space-around;
+	width: 70vw;
 `;
 
 export const LogoParceiro = styled.img`
@@ -167,14 +172,14 @@ export const ContainerSobreNos = styled.div`
   width: 100vw;
   display: flex;
   flex-direction: column;
-  background: #DFD9D9;
+  background: var(--cinza-claro);
   
   font-family: "Reem Kufi", sans-serif;
   align-items: center;  
 
   > h1 {
     font-size: 12vh;
-    color: var(--laranja);
+    color: var(--preto);
   }
 
   > h2 {
@@ -191,73 +196,6 @@ export const SobreNosImg = styled.img`
   display: flex;
   width: 50vw;
   margin-top: 5vh;
-`;
-
-// CONTATO
-export const ContainerContato = styled.div`
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  padding: 5vh 0;
-	width: 70vw;
-	justify-content: center;
-`;
-
-export const NejPoaContato = styled.img`
-  display: flex;
-  flex-direction: row;
-  width: 25vw;
-  padding-right: 10vw;
-`;
-
-export const ListaContatos = styled.div`
-  display: flex;
-  flex-direction: column;
-`;
-
-export const MeioContato = styled.a`
-  display: flex;
-  text-decoration: none;
-  align-items: center;
-
-  > h1 {
-    padding-left: 1vw;
-    font-size: 3vh;
-    color: var(--preto);
-    font-family: "Reem Kufi", sans-serif;
-    font-weight: 400;
-  }
-
-  &:hover {
-    > h1 {
-      color: var(--laranja);
-    }
-  }
-`;
-
-export const InstagramIcon = styled(Instagram)`
-  height: 4vw;
-  fill: var(--preto);
-
-  &.fillInstagramIcon{
-    fill: var(--laranja);
-  }
-`;
-
-export const LinkedinIcon = styled(Linkedin)`
-  height: 4vw;
-  fill: var(--preto);
-
-  &.fillLinkedinIcon{
-    fill: var(--laranja);
-  }
-`;
-
-export const MailIcon = styled(MailOutline)`
-  height: 4vw;
-  fill: var(--preto);
-
-  &.fillMailIcon{
-    fill: var(--laranja);
-  }
+	border-radius: 1vw;
+	margin-bottom: 5vh;
 `;
