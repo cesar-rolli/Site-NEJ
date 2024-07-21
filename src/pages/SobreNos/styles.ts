@@ -1,46 +1,49 @@
-import styled, { css } from "styled-components";
+import styled from "styled-components";
 
 export const Container = styled.div`
-  position: absolute;
-
   display: flex;
   flex-direction: column;
   width: 100vw;
-  height: 100vh;
+  // height: 100vh;
   align-items: center;
+  justify-content: start;
 
   > h1 {
-		font-size: 12vh;
+		font-size: 8vh;
     color: var(--laranja);
     font-family: "Reem Kufi", sans-serif;
     margin-top: 15vh;
   }
+
+	@media (min-width: 960px) {
+		> h1 {
+			font-size: 12vh;
+		}
+  }
 `;
 
-export const SobreNosImage1 = styled.img`
-  display: flex;
-  width: 50vw;
-  margin-top: 5vh;
-`;
+export const SobreNosImage = styled.img`
+  width: 70vw;
+  margin: 5vh 0 5vh 10vw;
 
-export const SobreNosImage2 = styled.img`
-  display: flex;
-  width: 30vw;
-  margin-top: 5vh;
+	@media (min-width: 960px) {
+    width: 30vw;
+    margin-top: 5vh;
+	}
 `;
 
 export const ContainerSobreNos = styled.div`
-  display: flex;
-  flex-direction: row;
-  // justify-content: space-between;
+  display: grid;
   align-items: center;
+  text-align: center;
   margin-top: 10vh;
+  width: 100vw;
   font-family: "Reem Kufi", sans-serif;
 
   > h1 {
     padding-right: 10vw;
     text-align: justify;
-    width: 30vw;
+    width: 80vw;
     margin: 0;
   
     font-size: 3.5vh;
@@ -51,11 +54,25 @@ export const ContainerSobreNos = styled.div`
   > h2 {
     padding-left: 10vw;
     text-align: justify;
-    width: 30vw;
+    width: 80vw;
     margin: 0;
   
     font-size: 3.5vh;
     color: #000;
     font-weight: 400;
+  }
+
+	@media (min-width: 960px) {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+
+    > h1 {
+      width: 30vw;
+    }
+    > h2 {
+      width: 30vw;
+    }
   }
 `;

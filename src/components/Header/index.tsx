@@ -7,6 +7,7 @@ import {
   Header2, 
   LeftImage, 
   Logo, 
+  Logo2,
   MenuIcon, 
   MenuList,
   MenuOptions,
@@ -16,7 +17,7 @@ import {
   ImgLink
 } from "./styles";
 
-import nlaranja from '../../assets/nlaranja.png';
+import nbranco from '../../assets/nbranco.png';
 import nej from '../../assets/nej.png';
 import foto1 from '../../assets/foto1.png';
 
@@ -42,7 +43,7 @@ const Header: React.FC = () => {
 	return (
     <>
     <ContainerHeader className={menuPage ? "" : "menuPage"}>
-      <ImgLink to={"/"}><Logo src={nlaranja} /></ImgLink>
+      <ImgLink to={"/"}><Logo src={nbranco} /></ImgLink>
         <MenuList 
           onMouseEnter={rotate}
           onMouseLeave={rotate}
@@ -53,32 +54,33 @@ const Header: React.FC = () => {
     </ContainerHeader>
 
     <ContainerMenu className={menuPage ? "" : "menuPage"}>
-    <Header2>
-      <ImgLink to={"/"}><Logo src={nej} /></ImgLink>
-      <MenuList2
-        onMouseEnter={rotate}
-        onMouseLeave={rotate}
-        onClick={handleClick}>
-        <p>Fechar</p>
-        <CloseIcon className={rotateIcon ? "" : "rotate"} />
-      </MenuList2>
-    </Header2>
-    <LeftImage src={foto1} className={menuPage ? "" : "menuPage"}/>
-    <MenuOptions className={menuPage ? "" : "menuPage"}>
-      <Links to={"/"}>Home</Links>
-      <Links to={"/rede-nej-poa"}>Rede NEJ POA</Links>
-      <Links to={"/eventos"}>Eventos</Links>
-      <Links to={"/nossos-parceiros"}>Nossos parceiros</Links>
-      <Links to={"/sobre-nos"}>Sobre nós</Links>
-      <OptionButton 
-        className={"link"}
-        href="https://www.instagram.com/nejpoa"
-        >Instagram</OptionButton>
-      <OptionButton
-        className={"link"}
-        href="https://www.linkedin.com/company/nejpoa"
-        >LinkedIn</OptionButton>
-      </MenuOptions>
+      <Header2>
+        <ImgLink to={"/"}><Logo2 src={nej} /></ImgLink>
+        <MenuList2
+          onMouseEnter={rotate}
+          onMouseLeave={rotate}
+          onClick={handleClick}>
+          <p>Fechar</p>
+          <CloseIcon className={rotateIcon ? "" : "rotate"} />
+        </MenuList2>
+      </Header2>
+      <LeftImage src={foto1} className={menuPage ? "" : "menuPage"}/>
+      <MenuOptions className={menuPage ? "" : "menuPage"}>
+        {/* <Links to={"/nejflix"}>NEJFLIX</Links> */}
+        <Links to={"/"}>Início</Links>
+        <Links to={"/rede-nej-poa"}>Rede NEJ POA</Links>
+        <Links to={"/eventos"}>Eventos</Links>
+        <Links to={"/nossos-parceiros"}>Nossos parceiros</Links>
+        <Links to={"/sobre-nos"}>Sobre nós</Links>
+        <OptionButton 
+          className={"link"}
+          href="https://www.instagram.com/nejpoa"
+          >Instagram</OptionButton>
+        <OptionButton
+          className={"link"}
+          href="https://www.linkedin.com/company/nejpoa"
+          >LinkedIn</OptionButton>
+        </MenuOptions>
     </ContainerMenu>
     </>
   );

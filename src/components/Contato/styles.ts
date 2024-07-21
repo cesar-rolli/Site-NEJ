@@ -10,24 +10,47 @@ export const Container = styled.div`
   display: flex;
   flex-direction: column;
   width: 100vw;
-  padding: 5vh 0;
-
+  padding-bottom: 10vh;
   align-items: center;
+  justify-content: center;
+  text-align: center;
+  
+  > p {
+    padding: 3vh 0 0 0;
+    width: 60vw;
+  }
+
+  @media (min-width: 960px) {
+    padding: 5vh 0;
+    > p {
+      padding: 0;
+      width: 100vw;
+    }
+  }
 `;
 
 export const ContainerContato = styled.div`
-  display: flex;
-  flex-direction: row;
+  display: grid;
+  width: 70vw;
+  justify-content: center;
   align-items: center;
-	width: 70vw;
-	justify-content: center;
+
+@media (min-width: 960px) {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
 `;
 
 export const NejPoaContato = styled.img`
-  display: flex;
-  flex-direction: row;
-  width: 25vw;
-  padding-right: 10vw;
+  width: 50vw;
+  margin: -5vh 0;
+
+  @media (min-width: 960px) {
+    margin: 0;
+    width: 30vw;
+    padding-right: 10vw;
+  }
 `;
 
 export const ListaContatos = styled.div`
@@ -42,7 +65,7 @@ export const MeioContato = styled.a`
 
   > h1 {
     padding-left: 1vw;
-    font-size: 3vh;
+    font-size: 2vh;
     color: var(--preto);
     font-family: "Reem Kufi", sans-serif;
     font-weight: 400;
@@ -53,31 +76,46 @@ export const MeioContato = styled.a`
       color: var(--laranja);
     }
   }
+ 
+	@media (min-width: 960px) {
+    > h1 {
+      font-size: 3vh;
+    }
+  }
 `;
 
 export const InstagramIcon = styled(Instagram)`
-  height: 4vw;
+  height: 6vw;
   fill: var(--preto);
 
   &.fillInstagramIcon{
     fill: var(--laranja);
   }
+  @media (min-width: 960px) {
+    height: 4vw;
+  }
 `;
 
 export const LinkedinIcon = styled(Linkedin)`
-  height: 4vw;
+  height: 6vw;
   fill: var(--preto);
 
   &.fillLinkedinIcon{
     fill: var(--laranja);
   }
+  @media (min-width: 960px) {
+    height: 4vw;
+  }
 `;
 
 export const MailIcon = styled(MailOutline)`
-  height: 4vw;
+  height: 6vw;
   fill: var(--preto);
 
   &.fillMailIcon{
     fill: var(--laranja);
+  }
+  @media (min-width: 960px) {
+    height: 4vw;
   }
 `;

@@ -1,11 +1,10 @@
-import styled, { css } from "styled-components";
+import styled from "styled-components";
 import { Link } from "react-router-dom";
 
 import { CropSquare, Close } from "../../styles/Icons";
 
 export const ContainerHeader = styled.div`
-  width: 90vw;
-  left: 5vw;
+  width: 100vw;
   position: fixed;
   display: flex;
   flex-direction: row;
@@ -14,6 +13,7 @@ export const ContainerHeader = styled.div`
   z-index: 2;
   transition: transform 1s;
   top: 0;
+  background: var(--laranja);
   
   &.menuPage {
     transform: translateY(-200px);
@@ -24,8 +24,9 @@ export const ContainerHeader = styled.div`
 export const MenuList = styled.div`  
   cursor: pointer;
   display: flex;
-  height: 10vh;
-  width: 10vw;
+  width: 30vw;
+  right: 5vw;
+  position: relative;
 
   flex-direction: row;
   align-items: center;
@@ -33,15 +34,23 @@ export const MenuList = styled.div`
 
   > p {
     font-size: 3vh;
-    color: var(--laranja);
+    color: var(--branco-logo);
     font-family: "Reem Kufi", sans-serif;
   }
+
+	@media (min-width: 500px) {
+    width: 10vw;
+	}
+
+	@media (min-width: 960px) {
+    width: 10vw;
+	}
 `;
 
 export const MenuIcon = styled(CropSquare)`
   width: 32px;
   height: 32px;
-  color: var(--laranja);
+  color: var(--branco-logo);
   margin-left: 16px;
   transform: rotate(0deg);
   transition: transform 0.5s;
@@ -56,7 +65,30 @@ export const ImgLink = styled(Link)`
 `;
 
 export const Logo = styled.img`
-  width: 10vw;
+  width: 15vw;
+  left: 5vw;
+  position: relative;
+
+	@media (min-width: 500px) {
+    width: 5vw;
+	}
+
+	@media (min-width: 960px) {
+    width: 5vw;
+	}
+`;
+
+export const Logo2 = styled.img`
+  width: 25vw;
+  left: 5vw;
+
+	@media (min-width: 500px) {
+    width: 10vw;
+	}
+
+	@media (min-width: 960px) {
+    width: 10vw;
+	}
 `;
 
 export const ContainerMenu = styled.div`
@@ -88,7 +120,7 @@ export const MenuList2 = styled.div`
   cursor: pointer;
   display: flex;
   height: 10vh;
-  width: 10vw;
+  width: 30vw;
 
   flex-direction: row;
   align-items: center;
@@ -100,6 +132,14 @@ export const MenuList2 = styled.div`
     color: var(--branco);
     font-family: "Reem Kufi", sans-serif;
   }
+
+	@media (min-width: 500px) {
+    width: 10vw;
+	}
+
+	@media (min-width: 960px) {
+    width: 10vw;
+	}
 `;
 
 export const Header2 = styled.div`
@@ -150,22 +190,31 @@ export const Links = styled(Link)`
   text-decoration: none;
   font-family: "Reem Kufi", sans-serif;
   color: var(--branco);  
-  width: 20vw;
-  left: 60vw;
+  width: 80vw;
+  left: 5vw;
   position: relative;
   font-size: 5vh;
 
   &:hover {
     text-decoration: 2px underline var(--branco);
   }
+
+	@media (min-width: 500px) {
+    width: 20vw;
+    left: 60vw;  
+	}
+
+	@media (min-width: 960px) {
+    width: 20vw;
+    left: 60vw;
+	}
 `;
 
 export const OptionButton = styled.a`
   cursor: pointer;
-  padding-left: 60vw;
   position: relative;
-  left: 60vw;
-  padding: 0;
+  left: 5vw;
+  padding-top: 1vh;
   display: flex;
   font-family: "Reem Kufi", sans-serif;
   margin: 0;
@@ -186,20 +235,37 @@ export const OptionButton = styled.a`
     font-size: 2vh;
     color: var(--cinza-escuro);
   }
+
+  @media (min-width: 500px) {
+    width: 20vw;
+    left: 60vw;  
+	}
+
+	@media (min-width: 960px) {
+    width: 10vw;
+    left: 60vw;
+	}
 `;
 
 export const LeftImage = styled.img`
-  position: absolute;
-  display: flex;
-  width: 30vw;
-  height: 30vw;
-  top: 20vh;
-  left: 15vw;
-  transform: rotate(-10deg) scale(1.2);
-  transition: transform 0.5s;
-  
-  &.menuPage {
-    transform: rotate(0deg) scale(1);
-    transition: transform 0.5s 0.2s;
+  display: none;
+
+  @media (min-width: 500px) {
+  }
+
+  @media (min-width: 960px) {
+    position: absolute;
+    display: flex;
+    width: 30vw;
+    height: 30vw;
+    top: 20vh;
+    left: 15vw;
+    transform: rotate(-10deg) scale(1.2);
+    transition: transform 0.5s;
+    
+    &.menuPage {
+      transform: rotate(0deg) scale(1);
+      transition: transform 0.5s 0.2s;
+    }
   }
 `;

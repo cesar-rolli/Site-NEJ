@@ -54,11 +54,10 @@ const Home: React.FC = () => {
 
         <ContainerEventos>
           <h1>Eventos</h1>
-          
         </ContainerEventos>
 
         <ContainerParceiros>
-          <h1>Nossos Parceiros</h1>
+          <h1>Parceiros</h1>
           <BlocoParceiros>
             <a href='https://bit.ly/3zkQiCG'>
               <LogoParceiro src={bain}/>

@@ -35,23 +35,33 @@ export const Wrapper = styled.div`
 `;
 
 export const ContainerMissao = styled.div`
-	width: 100vw;
 	padding-left: 15vw;
 	display: flex;
 	flex-direction: row;
 	justify-content: space-between;
-`;
+  width: 100vw;
+`;  
 
 // MISSAO
 export const ContainerRede = styled.div`
-	display: flex;
-	flex-directions: row;
-  justify-content: space-between;
+	display: grid;
+  align-items: center;
+	text-align: end;
+  width: 80vw;
+
+  @media (min-width: 500px) {
+  }
+	@media (min-width: 960px) {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 40vw;
+	}
 `;
 
 export const Missao = styled.div`
-  width: 40vw;
-	height: 102.2vh;
+  width: 80vw;
+	height: 100vh;
 	text-align: end;
 
   > p {
@@ -77,6 +87,7 @@ export const Missao = styled.div`
 	}
 
 	@media (min-width: 960px) {
+    width: 40vw;
 		> p {
 			font-size: 2.5vh;
 			padding: 5vh 0;
@@ -91,7 +102,7 @@ export const Missao = styled.div`
 export const ValoresRede = styled.div`
 	display: flex;
 	flex-direction: column;
-	align-items: center;
+	align-items: end;
 	text-align: end;
 	padding-top: 5vh;
 
@@ -102,7 +113,7 @@ export const ValoresRede = styled.div`
 		font-weight: 700;
     font-style: italic;
   }
-
+  
 	> p {
     font-size: 2vh;
     color: var(--preto);
@@ -112,15 +123,26 @@ export const ValoresRede = styled.div`
 `;
 
 export const Divisor = styled.div`
-  width: 40vw;
+  width: 80vw;
   height: 1px;
   background: var(--azul);
+  margin-top: 5vh;
+
+	@media (min-width: 960px) {
+    width: 40vw;
+  }
 `;
 
 export const Gasometro = styled.img`
-  width: 40vw;
-	height: 102.2vh;
-	border-radius: 0 0 0 3vw;
+  display: none;
+  
+	@media (min-width: 960px) {
+    display: flex;
+    width: 40vw;
+    height: 100vh;
+    border-radius: 0 0 0 3vw;
+    top: 10vh;
+  }
 `;
 
 // EVENTOS
@@ -134,10 +156,16 @@ export const ContainerEventos = styled.div `
   margin-top: 10vh;
 
 	> h1 {
-    font-size: 12vh;
+    font-size: 8vh;
     color: var(--preto);
     font-family: "Reem Kufi", sans-serif;
 	}
+
+	@media (min-width: 960px) {
+    > h1 {
+      font-size: 12vh;
+    }
+  }
 `;
 
 // PARCEIROS
@@ -149,22 +177,37 @@ export const ContainerParceiros = styled.div`
 	align-items: center;
   
   > h1 {
-    font-size: 12vh;
+    font-size: 8vh;
     color: var(--laranja);
     margin: 0;
+  }
+
+	@media (min-width: 960px) {
+    > h1 {
+      font-size: 12vh;
+    }
   }
 `;
 
 export const BlocoParceiros = styled.div`
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   justify-content: space-around;
+	align-items: center;
 	width: 70vw;
+
+	@media (min-width: 960px) {
+    flex-direction: row;
+  }
 `;
 
 export const LogoParceiro = styled.img`
   display: flex;
-  width: 20vw;
+  width: 50vw;
+
+	@media (min-width: 960px) {
+    width: 20vw;
+  }
 `;
 
 // SOBRE NOS
@@ -178,7 +221,7 @@ export const ContainerSobreNos = styled.div`
   align-items: center;  
 
   > h1 {
-    font-size: 12vh;
+    font-size: 8vh;
     color: var(--preto);
   }
 
@@ -187,15 +230,28 @@ export const ContainerSobreNos = styled.div`
     width: 70vw;
     font-weight: 400;
   
-    font-size: 3.5vh;
+    font-size: 2.5vh;
     color: var(--preto);
+  }
+
+	@media (min-width: 960px) {
+    > h1 {
+      font-size: 12vh;
+    }
+    > h2 {
+      font-size: 3.5vh;
+    }
   }
 `;
 
 export const SobreNosImg = styled.img`
   display: flex;
-  width: 50vw;
+  width: 70vw;
   margin-top: 5vh;
 	border-radius: 1vw;
 	margin-bottom: 5vh;
+  
+	@media (min-width: 960px) {
+    width: 50vw;
+  }
 `;

@@ -45,6 +45,7 @@ export const GlobalStyles = createGlobalStyle`
   :root {
     --preto: #0D0E13;
     --branco: #D9D9D9;
+    --branco-logo: #FFF;
     --laranja: #C75D25;
     --azul: #1B5E82;
     --cinza-claro: #C7C7C7;

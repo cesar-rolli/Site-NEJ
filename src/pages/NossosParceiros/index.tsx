@@ -10,7 +10,7 @@ const NossosParceiros: React.FC = () => {
     <Container>
       <Header />
 
-      <h1>Nossos Parceiros</h1>
+      <h1>Parceiros</h1>
       <Contato />
     </Container>
   );

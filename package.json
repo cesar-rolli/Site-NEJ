@@ -15,6 +15,7 @@
     "react-router-dom": "^6.24.1",
     "react-scripts": "5.0.1",
     "react-scroll-parallax": "^3.4.5",
+    "react-stack-grid": "^0.7.1",
     "styled-components": "^6.1.11",
     "styled-icons": "^10.47.1",
     "typescript": "^4.9.5",
@@ -43,5 +44,8 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "@types/react-stack-grid": "^0.7.7"
   }
 }

@@ -10,9 +10,15 @@ export const Container = styled.div`
 	align-items: center;
 
 	> h1 {
-		font-size: 12vh;
+		font-size: 6vh;
 		color: var(--laranja);
 		font-family: "Reem Kufi", sans-serif;
 		margin-top: 15vh;
 	}
+
+	@media (min-width: 960px) {
+		> h1 {
+			font-size: 12vh;
+		}
+  }
 `;
