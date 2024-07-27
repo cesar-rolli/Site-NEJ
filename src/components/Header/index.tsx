@@ -12,7 +12,7 @@ import {
   MenuList,
   MenuOptions,
   MenuList2,
-  OptionButton,
+  // OptionButton,
   Links,
   ImgLink
 } from "./styles";
@@ -48,7 +48,6 @@ const Header: React.FC = () => {
           onMouseEnter={rotate}
           onMouseLeave={rotate}
           onClick={handleClick}>
-          <p>Menu</p>
           <MenuIcon className={rotateIcon ? "" : "rotate"} />
       </MenuList>
     </ContainerHeader>
@@ -60,7 +59,6 @@ const Header: React.FC = () => {
           onMouseEnter={rotate}
           onMouseLeave={rotate}
           onClick={handleClick}>
-          <p>Fechar</p>
           <CloseIcon className={rotateIcon ? "" : "rotate"} />
         </MenuList2>
       </Header2>
@@ -68,18 +66,20 @@ const Header: React.FC = () => {
       <MenuOptions className={menuPage ? "" : "menuPage"}>
         {/* <Links to={"/nejflix"}>NEJFLIX</Links> */}
         <Links to={"/"}>Início</Links>
-        <Links to={"/rede-nej-poa"}>Rede NEJ POA</Links>
+        <Links to={"/portal"}>Portal</Links>
         <Links to={"/eventos"}>Eventos</Links>
+        <Links to={"/rede-nej-poa"}>Rede NEJ POA</Links>
         <Links to={"/nossos-parceiros"}>Nossos parceiros</Links>
         <Links to={"/sobre-nos"}>Sobre nós</Links>
-        <OptionButton 
+        <Links to={"/"}>Blog</Links>
+        {/* <OptionButton 
           className={"link"}
           href="https://www.instagram.com/nejpoa"
           >Instagram</OptionButton>
         <OptionButton
           className={"link"}
           href="https://www.linkedin.com/company/nejpoa"
-          >LinkedIn</OptionButton>
+          >LinkedIn</OptionButton> */}
         </MenuOptions>
     </ContainerMenu>
     </>

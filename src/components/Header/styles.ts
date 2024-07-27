@@ -1,7 +1,7 @@
 import styled from "styled-components";
 import { Link } from "react-router-dom";
 
-import { CropSquare, Close } from "../../styles/Icons";
+import { Menu, Close } from "../../styles/Icons";
 
 export const ContainerHeader = styled.div`
   width: 100vw;
@@ -47,7 +47,7 @@ export const MenuList = styled.div`
 	}
 `;
 
-export const MenuIcon = styled(CropSquare)`
+export const MenuIcon = styled(Menu)`
   width: 32px;
   height: 32px;
   color: var(--branco-logo);

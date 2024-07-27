@@ -1,6 +1,6 @@
 export {
   Close,
-  CropSquare,
+  Menu,
   MailOutline,
 } from "styled-icons/material";
 

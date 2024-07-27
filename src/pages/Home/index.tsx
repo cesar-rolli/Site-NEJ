@@ -34,6 +34,7 @@ const Home: React.FC = () => {
 
       <Wrapper>
         <ContainerMissao>
+          <Gasometro src={gasometro} />
           <Missao>
             <h1>Experiência<br/>Empresa Junior</h1>
             <p>Somos o Núcleo que da suporte, fortalece o ecossistema gerando oportunidades para a rede, desenvolve e aprimora as EJ's da região metropolitana de Porto Alegre</p>
@@ -49,7 +50,6 @@ const Home: React.FC = () => {
               </ValoresRede>
             </ContainerRede>
           </Missao>
-          <Gasometro src={gasometro} />
         </ContainerMissao>
 
         <ContainerEventos>

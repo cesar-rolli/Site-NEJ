@@ -34,15 +34,21 @@ export const Wrapper = styled.div`
 	}
 `;
 
+// MISSAO
 export const ContainerMissao = styled.div`
-	padding-left: 15vw;
-	display: flex;
-	flex-direction: row;
-	justify-content: space-between;
+  display: grid;
+  justify-content: space-between;
   width: 100vw;
+  justify-content: center;
+
+  @media (min-width: 960px) {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    padding-left: 15vw;
+  }
 `;  
 
-// MISSAO
 export const ContainerRede = styled.div`
 	display: grid;
   align-items: center;
@@ -62,7 +68,8 @@ export const ContainerRede = styled.div`
 export const Missao = styled.div`
   width: 80vw;
 	height: 100vh;
-	text-align: end;
+	text-align: center;
+  margin-left: 10vw;
 
   > p {
     font-size: 2vh;
@@ -74,7 +81,7 @@ export const Missao = styled.div`
 		font-size: 6vh;
     color: var(--preto);
     font-family: "Anton", sans-serif;
-    margin-top: 23vh;
+    margin: 5vh 0;
   }
 
 	@media (min-width: 500px) {
@@ -88,12 +95,14 @@ export const Missao = styled.div`
 
 	@media (min-width: 960px) {
     width: 40vw;
+    text-align: start;
+    margin-left: 0;
 		> p {
 			font-size: 2.5vh;
 			padding: 5vh 0;
-			padding-left: 8vw;
 		}
 		> h1 {
+      margin-top: 20vh;
 			font-size: 12vh;
 		}
 	}
@@ -102,8 +111,8 @@ export const Missao = styled.div`
 export const ValoresRede = styled.div`
 	display: flex;
 	flex-direction: column;
-	align-items: end;
-	text-align: end;
+	align-items: center;
+	text-align: center;
 	padding-top: 5vh;
 
   > h1 {
@@ -120,6 +129,10 @@ export const ValoresRede = styled.div`
     font-family: "Reem Kufi", sans-serif;
     font-weight: 400;
 	}
+	@media (min-width: 960px) {
+    align-items: start;
+    text-align: start;
+  }
 `;
 
 export const Divisor = styled.div`
@@ -134,7 +147,9 @@ export const Divisor = styled.div`
 `;
 
 export const Gasometro = styled.img`
-  display: none;
+  display: flex;
+  height: 100vh;
+  width: 100vw;
   
 	@media (min-width: 960px) {
     display: flex;
