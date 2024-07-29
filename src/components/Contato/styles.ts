@@ -67,7 +67,6 @@ export const MeioContato = styled.a`
     padding-left: 1vw;
     font-size: 2vh;
     color: var(--preto);
-    font-family: "Reem Kufi", sans-serif;
     font-weight: 400;
   }
 

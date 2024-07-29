@@ -1,11 +1,11 @@
 import { createGlobalStyle, css } from "styled-components";
 
-export const ReemKufiFont = css`
-  @import url('https://fonts.googleapis.com/css2?family=Reem+Kufi:wght@400..700&display=swap');
+export const RalewayFont = css`
+  @import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@1,700&display=swap');
 `;
 
-export const RobotoFont = css`
-  @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@1,700&display=swap');
+export const ComfortaaFont = css`
+  @import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300..700&family=Raleway:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@1,700&display=swap');
 `;
 
 export const GlobalStyles = createGlobalStyle`
@@ -37,7 +37,7 @@ export const GlobalStyles = createGlobalStyle`
   *, button, input {
     border: 0;
     background: none;
-    font-family: "Reem Kufi", sans-serif;
+    font-family: "Raleway", sans-serif;
   }
   html {
     background: var(--branco);

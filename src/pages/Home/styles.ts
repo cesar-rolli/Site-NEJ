@@ -1,4 +1,4 @@
-import styled from "styled-components";
+import styled, { css } from "styled-components";
 
 export const Container = styled.div`
 	display: flex;
@@ -17,13 +17,12 @@ export const Wrapper = styled.div`
     font-size: 12vh;
 		padding-top: 5vh;
     color: var(--laranja);
-    font-family: "Reem Kufi", sans-serif;
+    font-family: "Comfortaa", sans-serif;
   }
 
   > p {
     font-size: 3vh;
     color: var(--preto);
-    font-family: "Reem Kufi", sans-serif;
     font-weight: 400;
     padding-bottom: 10vh;
   }
@@ -40,12 +39,14 @@ export const ContainerMissao = styled.div`
   justify-content: space-between;
   width: 100vw;
   justify-content: center;
+  margin-bottom: -5vh;
 
   @media (min-width: 960px) {
     display: flex;
     flex-direction: row-reverse;
     justify-content: space-between;
     padding-left: 15vw;
+    margin-bottom: 5vh;
   }
 `;  
 
@@ -73,14 +74,13 @@ export const Missao = styled.div`
 
   > p {
     font-size: 2vh;
-    font-family: "Reem Kufi", sans-serif;
     color: var(--preto);
   }
 
   > h1 {
 		font-size: 6vh;
     color: var(--preto);
-    font-family: "Anton", sans-serif;
+    font-family: "Comfortaa", sans-serif;
     margin: 5vh 0;
   }
 
@@ -98,8 +98,9 @@ export const Missao = styled.div`
     text-align: start;
     margin-left: 0;
 		> p {
-			font-size: 2.5vh;
+			font-size: 3vh;
 			padding: 5vh 0;
+      line-height: 1.5;
 		}
 		> h1 {
       margin-top: 20vh;
@@ -118,16 +119,15 @@ export const ValoresRede = styled.div`
   > h1 {
     font-size: 10vh;
     color: var(--laranja);
-    font-family: "Roboto", sans-serif;
+    font-family: "Comfortaa", sans-serif;
 		font-weight: 700;
     font-style: italic;
   }
   
 	> p {
-    font-size: 2vh;
+    font-size: 2.3vh;
     color: var(--preto);
-    font-family: "Reem Kufi", sans-serif;
-    font-weight: 400;
+    line-height: 1.3;
 	}
 	@media (min-width: 960px) {
     align-items: start;
@@ -144,6 +144,59 @@ export const Divisor = styled.div`
 	@media (min-width: 960px) {
     width: 40vw;
   }
+`;
+
+export const ContainerFoto = styled.div`
+  height: 100vh;
+  position: relative;
+  display: flex;
+`;
+
+export const ControleFotos = styled.div`
+  width: 12vh;
+  height: 32vh;  
+  background: var(--branco);
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  bottom: 0;
+  border-radius: 0 8vw 0 0;
+  justify-content: space-evenly;
+  align-items: center;
+
+	@media (min-width: 960px) {
+    width: 12vh;
+    height: 32vh;
+    border-radius: 3vw;
+    left: 1vw;
+    bottom: 1vw;
+  }
+`;
+
+const Circulos = css`
+  background: var(--azul);
+  width: 8vh;
+  height: 8vh;
+  border-radius: 4vh;
+  cursor: pointer;
+
+  @media (min-width: 960px) {
+    width: 8vh;
+    height: 8vh;
+    border-radius: 4vh;
+  }
+`;
+
+export const Circulo1 = styled.div`
+  ${Circulos}
+`;
+
+export const Circulo2 = styled.div`
+  ${Circulos}
+`;
+
+export const Circulo3 = styled.div`
+  ${Circulos}
 `;
 
 export const Gasometro = styled.img`
@@ -173,7 +226,8 @@ export const ContainerEventos = styled.div `
 	> h1 {
     font-size: 8vh;
     color: var(--preto);
-    font-family: "Reem Kufi", sans-serif;
+    font-family: "Comfortaa", sans-serif;
+    padding: 3vh 0;
 	}
 
 	@media (min-width: 960px) {
@@ -195,6 +249,8 @@ export const ContainerParceiros = styled.div`
     font-size: 8vh;
     color: var(--laranja);
     margin: 0;
+    font-family: "Comfortaa", sans-serif;
+    padding: 3vh 0;
   }
 
 	@media (min-width: 960px) {
@@ -232,12 +288,13 @@ export const ContainerSobreNos = styled.div`
   flex-direction: column;
   background: var(--cinza-claro);
   
-  font-family: "Reem Kufi", sans-serif;
   align-items: center;  
 
   > h1 {
     font-size: 8vh;
     color: var(--preto);
+    font-family: "Comfortaa", sans-serif;
+    padding: 3vh 0;
   }
 
   > h2 {
@@ -247,6 +304,7 @@ export const ContainerSobreNos = styled.div`
   
     font-size: 2.5vh;
     color: var(--preto);
+    line-height: 1.3;
   }
 
 	@media (min-width: 960px) {

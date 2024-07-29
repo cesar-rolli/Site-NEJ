@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 
 import { 
   BlocoParceiros,
@@ -15,6 +15,11 @@ import {
   Wrapper,
   ContainerEventos,
   Gasometro,
+  ContainerFoto,
+  ControleFotos,
+  Circulo2,
+  Circulo1,
+  Circulo3,
 } from "./styles";
 
 import Header from "../../components/Header";
@@ -28,25 +33,53 @@ import sobrenos from '../../assets/sobre-nos-1.png';
 import gasometro from '../../assets/teste.png';
 
 const Home: React.FC = () => {
+  // VALORES DA REDE
+  const [n_empresas, setN_empresas] = useState(0);
+	useEffect(() => {
+    if (n_empresas < 30) {
+      setTimeout(() => setN_empresas(prev => prev += 1), 50)
+		}
+	},[n_empresas])
+
+  const [n_empresarios, setN_empresarios] = useState(0);
+	useEffect(() => {
+		if (n_empresarios < 450) {
+			setTimeout(() => setN_empresarios(prev => prev += 1), 5)
+		}
+	},[n_empresarios])
+
+  //MUDANCA DE IMAGENS
+  const [imagem1, setImagem1] = useState(true);
+  const handleClick = () => {
+    
+  }
+
   return (
     <Container>
       <Header />
 
       <Wrapper>
         <ContainerMissao>
-          <Gasometro src={gasometro} />
+          <ContainerFoto>
+            <ControleFotos>
+              <Circulo1 onClick={handleClick}/>
+              <Circulo2 />
+              <Circulo3 />
+            </ControleFotos>
+            <Gasometro src={gasometro} />
+          </ContainerFoto>
           <Missao>
             <h1>Experiência<br/>Empresa Junior</h1>
-            <p>Somos o Núcleo que da suporte, fortalece o ecossistema gerando oportunidades para a rede, desenvolve e aprimora as EJ's da região metropolitana de Porto Alegre</p>
+            <p>Somos o Núcleo que da suporte, fortalece o ecossistema gerando oportunidades para a rede, desenvolve e aprimora as EJ's da região metropolitana de Porto Alegre.</p>
             <Divisor />
             <ContainerRede>
               <ValoresRede>
-                <h1>+30</h1>
+                <h1>+{n_empresas}</h1>
                 <p>Empresas Juniores associadas<br/>a Rede NEJ POA</p>
               </ValoresRede>
               <ValoresRede>
-                <h1>+500</h1>
-                <p>Estudantes e Empresários Juniores na região<br/>metropolitana de Porto Alegre</p>
+                <h1>+{n_empresarios}</h1>
+                <p>Estudantes e Empresários Juniores<br/>na regiãometropolitana de Porto Alegre</p>
               </ValoresRede>
             </ContainerRede>
           </Missao>

@@ -32,12 +32,6 @@ export const MenuList = styled.div`
   align-items: center;
   justify-content: center;
 
-  > p {
-    font-size: 3vh;
-    color: var(--branco-logo);
-    font-family: "Reem Kufi", sans-serif;
-  }
-
 	@media (min-width: 500px) {
     width: 10vw;
 	}
@@ -127,12 +121,6 @@ export const MenuList2 = styled.div`
   border: none;
   justify-content: center;
 
-  > p {
-    font-size: 3vh;
-    color: var(--branco);
-    font-family: "Reem Kufi", sans-serif;
-  }
-
 	@media (min-width: 500px) {
     width: 10vw;
 	}
@@ -188,7 +176,6 @@ export const MenuOptions = styled.div`
 
 export const Links = styled(Link)`
   text-decoration: none;
-  font-family: "Reem Kufi", sans-serif;
   color: var(--branco);  
   width: 80vw;
   left: 5vw;
@@ -207,6 +194,7 @@ export const Links = styled(Link)`
 	@media (min-width: 960px) {
     width: 20vw;
     left: 60vw;
+    margin-top: 2vh;
 	}
 `;
 
