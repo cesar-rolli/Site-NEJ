@@ -1,4 +1,4 @@
-import styled, { css } from "styled-components";
+import styled from "styled-components";
 
 export const Container = styled.div`
 	display: flex;
@@ -146,64 +146,11 @@ export const Divisor = styled.div`
   }
 `;
 
-export const ContainerFoto = styled.div`
-  height: 100vh;
-  position: relative;
-  display: flex;
-`;
-
-export const ControleFotos = styled.div`
-  width: 12vh;
-  height: 32vh;  
-  background: var(--branco);
-  position: absolute;
-  display: flex;
-  flex-direction: column;
-  bottom: 0;
-  border-radius: 0 8vw 0 0;
-  justify-content: space-evenly;
-  align-items: center;
-
-	@media (min-width: 960px) {
-    width: 12vh;
-    height: 32vh;
-    border-radius: 3vw;
-    left: 1vw;
-    bottom: 1vw;
-  }
-`;
-
-const Circulos = css`
-  background: var(--azul);
-  width: 8vh;
-  height: 8vh;
-  border-radius: 4vh;
-  cursor: pointer;
-
-  @media (min-width: 960px) {
-    width: 8vh;
-    height: 8vh;
-    border-radius: 4vh;
-  }
-`;
-
-export const Circulo1 = styled.div`
-  ${Circulos}
-`;
-
-export const Circulo2 = styled.div`
-  ${Circulos}
-`;
-
-export const Circulo3 = styled.div`
-  ${Circulos}
-`;
-
 export const Gasometro = styled.img`
   display: flex;
   height: 100vh;
   width: 100vw;
-  
+
 	@media (min-width: 960px) {
     display: flex;
     width: 40vw;

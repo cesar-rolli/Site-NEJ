@@ -15,11 +15,6 @@ import {
   Wrapper,
   ContainerEventos,
   Gasometro,
-  ContainerFoto,
-  ControleFotos,
-  Circulo2,
-  Circulo1,
-  Circulo3,
 } from "./styles";
 
 import Header from "../../components/Header";
@@ -31,6 +26,32 @@ import lojasqq from '../../assets/lojasqq.png';
 import v4 from '../../assets/V4.png';
 import sobrenos from '../../assets/sobre-nos-1.png';
 import gasometro from '../../assets/teste.png';
+
+interface Fotos {
+  nome: string
+  imagem: string
+  valor: number
+}
+
+const fotos: Fotos[] = [
+  {
+    nome: 'foto0',
+    imagem: '../../assets/eventos/foto0.png',
+    valor: 0
+  },{
+    nome: 'foto1',
+    imagem: '../../assets/eventos/foto1.png',
+    valor: 1
+  },{
+    nome: 'foto2',
+    imagem: '../../assets/eventos/foto2.png',
+    valor: 2
+  },{
+    nome: 'foto3',
+    imagem: '../../assets/eventos/foto3.png',
+    valor: 3
+  },
+]
 
 const Home: React.FC = () => {
   // VALORES DA REDE
@@ -48,26 +69,13 @@ const Home: React.FC = () => {
 		}
 	},[n_empresarios])
 
-  //MUDANCA DE IMAGENS
-  const [imagem1, setImagem1] = useState(true);
-  const handleClick = () => {
-    
-  }
-
   return (
     <Container>
       <Header />
 
       <Wrapper>
         <ContainerMissao>
-          <ContainerFoto>
-            <ControleFotos>
-              <Circulo1 onClick={handleClick}/>
-              <Circulo2 />
-              <Circulo3 />
-            </ControleFotos>
-            <Gasometro src={gasometro} />
-          </ContainerFoto>
+          <Gasometro src={gasometro} />
           <Missao>
             <h1>Experiência<br/>Empresa Junior</h1>
             <p>Somos o Núcleo que da suporte, fortalece o ecossistema gerando oportunidades para a rede, desenvolve e aprimora as EJ's da região metropolitana de Porto Alegre.</p>
