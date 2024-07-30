@@ -41,7 +41,7 @@ const EventosComponent: React.FC = () => {
       if (indice === (ListaFotos.length - 3)) {setIndice(indice => indice = 0)}
     } else {
       setIndice(indice + 1);
-      if (indice === (ListaFotos.length - 1)) {setIndice(indice => indice = 0)}
+      if (indice === (ListaFotos.length - 3)) {setIndice(indice => indice = 0)}
     }    
   }
   const handleClickBefore = () => {
@@ -50,7 +50,7 @@ const EventosComponent: React.FC = () => {
       if (indice === 0) {setIndice(indice => indice = ListaFotos.length - 3)}
     } else {
       setIndice(indice - 1);
-      if (indice === 0) {setIndice(indice => indice = ListaFotos.length - 1)}
+      if (indice === 0) {setIndice(indice => indice = ListaFotos.length - 3)}
     }
   }
 
