@@ -26,46 +26,36 @@ import lojasqq from '../../assets/lojasqq.png';
 import v4 from '../../assets/V4.png';
 import sobrenos from '../../assets/sobre-nos-1.png';
 import gasometro from '../../assets/teste.png';
-
-interface Fotos {
-  nome: string
-  imagem: string
-  valor: number
-}
-
-const fotos: Fotos[] = [
-  {
-    nome: 'foto0',
-    imagem: '../../assets/eventos/foto0.png',
-    valor: 0
-  },{
-    nome: 'foto1',
-    imagem: '../../assets/eventos/foto1.png',
-    valor: 1
-  },{
-    nome: 'foto2',
-    imagem: '../../assets/eventos/foto2.png',
-    valor: 2
-  },{
-    nome: 'foto3',
-    imagem: '../../assets/eventos/foto3.png',
-    valor: 3
-  },
-]
+import Eventos from "../../components/EventosComponent";
 
 const Home: React.FC = () => {
   // VALORES DA REDE
   const [n_empresas, setN_empresas] = useState(0);
 	useEffect(() => {
-    if (n_empresas < 30) {
+    if (n_empresas < 20) {
       setTimeout(() => setN_empresas(prev => prev += 1), 50)
+		}
+    if (n_empresas >= 20 && n_empresas < 30) {
+      setTimeout(() => setN_empresas(prev => prev += 1), 80)
 		}
 	},[n_empresas])
 
   const [n_empresarios, setN_empresarios] = useState(0);
 	useEffect(() => {
-		if (n_empresarios < 450) {
+		if (n_empresarios < 400) {
 			setTimeout(() => setN_empresarios(prev => prev += 1), 5)
+		}
+		if (n_empresarios >= 400 && n_empresarios < 430) {
+			setTimeout(() => setN_empresarios(prev => prev += 1), 20)
+		}
+		if (n_empresarios >= 430 && n_empresarios < 440) {
+			setTimeout(() => setN_empresarios(prev => prev += 1), 30)
+		}
+		if (n_empresarios >= 440 && n_empresarios < 445) {
+			setTimeout(() => setN_empresarios(prev => prev += 1), 50)
+		}
+		if (n_empresarios >= 445 && n_empresarios < 450) {
+			setTimeout(() => setN_empresarios(prev => prev += 1), 80)
 		}
 	},[n_empresarios])
 
@@ -95,6 +85,7 @@ const Home: React.FC = () => {
 
         <ContainerEventos>
           <h1>Eventos</h1>
+          <Eventos />
         </ContainerEventos>
 
         <ContainerParceiros>

@@ -165,7 +165,7 @@ export const ContainerEventos = styled.div `
 	display: flex;
 	flex-direction: column;
 	width: 100vw;
-	height: 100vh;
+	height: 75vh;
 	background: var(--cinza-claro);
 	align-items: center;
   margin-top: 10vh;
@@ -178,6 +178,7 @@ export const ContainerEventos = styled.div `
 	}
 
 	@media (min-width: 960px) {
+    height: 100vh;
     > h1 {
       font-size: 12vh;
     }

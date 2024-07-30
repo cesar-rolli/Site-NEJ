@@ -2,6 +2,8 @@ export {
   Close,
   Menu,
   MailOutline,
+  NavigateNext,
+  NavigateBefore
 } from "styled-icons/material";
 
 export {
