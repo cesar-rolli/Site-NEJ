@@ -4,7 +4,6 @@ export const Container = styled.div`
   display: flex;
   flex-direction: column;
   width: 100vw;
-  // height: 100vh;
   align-items: center;
   justify-content: start;
 
@@ -42,7 +41,7 @@ export const ContainerSobreNos = styled.div`
 
   > h1 {
     padding-right: 10vw;
-    text-align: justify;
+    text-align: start;
     width: 80vw;
     margin: 0;
   
@@ -53,7 +52,7 @@ export const ContainerSobreNos = styled.div`
 
   > h2 {
     padding-left: 10vw;
-    text-align: justify;
+    text-align: start;
     width: 80vw;
     margin: 0;
   

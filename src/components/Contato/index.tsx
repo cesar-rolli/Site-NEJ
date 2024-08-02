@@ -49,6 +49,7 @@ const Contato: React.FC = () => {
             <h1>linkedin.com/company/nejpoa</h1>
           </MeioContato>
           <MeioContato
+            href="mailto:contato@nejpoa.com.br"
             onMouseEnter={fillMailIcon}
             onMouseLeave={fillMailIcon}>
             <MailIcon className={fillMail ? "" : "fillMailIcon"}/>

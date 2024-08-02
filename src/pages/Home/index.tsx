@@ -1,12 +1,9 @@
 import React, { useEffect, useState } from "react";
 
 import { 
-  BlocoParceiros,
   ContainerParceiros,
   Container, 
-  Divisor, 
   ContainerRede, 
-  LogoParceiro, 
   ContainerMissao, 
   Missao,
   ContainerSobreNos, 
@@ -20,13 +17,10 @@ import {
 import Header from "../../components/Header";
 import Contato from "../../components/Contato";
 
-import bain from '../../assets/bain.png';
-import bat from '../../assets/bat.png';
-import lojasqq from '../../assets/lojasqq.png';
-import v4 from '../../assets/V4.png';
-import sobrenos from '../../assets/sobre-nos-1.png';
+import time from '../../assets/time.png';
 import gasometro from '../../assets/teste.png';
 import Eventos from "../../components/EventosComponent";
+import Parceiros from "../../components/Parceiros";
 
 const Home: React.FC = () => {
   // VALORES DA REDE
@@ -68,8 +62,6 @@ const Home: React.FC = () => {
           <Gasometro src={gasometro} />
           <Missao>
             <h1>Experiência<br/>Empresa Junior</h1>
-            <p>Somos o Núcleo que da suporte, fortalece o ecossistema gerando oportunidades para a rede, desenvolve e aprimora as EJ's da região metropolitana de Porto Alegre.</p>
-            <Divisor />
             <ContainerRede>
               <ValoresRede>
                 <h1>+{n_empresas}</h1>
@@ -80,6 +72,7 @@ const Home: React.FC = () => {
                 <p>Estudantes e Empresários Juniores<br/>na regiãometropolitana de Porto Alegre</p>
               </ValoresRede>
             </ContainerRede>
+            <p>Somos o Núcleo que da suporte, fortalece o ecossistema gerando oportunidades para a rede, desenvolve e aprimora as EJ's da região metropolitana de Porto Alegre.</p>
           </Missao>
         </ContainerMissao>
 
@@ -90,29 +83,14 @@ const Home: React.FC = () => {
 
         <ContainerParceiros>
           <h1>Parceiros</h1>
-          <BlocoParceiros>
-            <a href='https://bit.ly/3zkQiCG'>
-              <LogoParceiro src={bain}/>
-            </a>
-            <a href='https://bit.ly/3RMkHQJ'>
-              <LogoParceiro src={bat}/>
-            </a>
-          </BlocoParceiros>
-          <BlocoParceiros>
-            <a href='https://bit.ly/3W0jiZx'>
-              <LogoParceiro src={lojasqq}/>
-            </a>
-            <a href='https://bit.ly/3VGV6tB'>
-              <LogoParceiro src={v4}/>
-            </a>
-          </BlocoParceiros>
+          <Parceiros />
         </ContainerParceiros>
 
         <ContainerSobreNos>
           <h1>Sobre Nós</h1>
           <h2>Somos pós juniores das EJs da nossa Rede, unidos pelo propósito do NEJ POA, dando continuidade a uma jornada de liderança e empreendedorismo, agora voltada ao desenvolvimento das empresas juniores. <br/><br/>
             Nosso dia a dia é corrido, somos de universidades, cursos, EJ's e principalmente realidades diferentes, mas nos unimos em prol de um objetivo maior. Somos quando estamos juntos, nos apoiamos e comemoramos a cada vitória.</h2>
-          <SobreNosImg src={sobrenos}/>
+          <SobreNosImg src={time}/>
         </ContainerSobreNos>
 
         <Contato />

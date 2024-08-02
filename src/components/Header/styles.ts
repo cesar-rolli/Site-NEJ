@@ -147,13 +147,6 @@ export const CloseIcon = styled(Close)`
   height: 32px;
   fill: var(--branco);
   margin-left: 16px;
-  transform: rotate(0deg);
-  transition: transform 0.5s;
-  
-  &.rotate {
-    transform: rotate(90deg);
-    transition: transform 0.5s;
-  }
 `;
 
 export const MenuOptions = styled.div`
@@ -165,13 +158,6 @@ export const MenuOptions = styled.div`
   top: 0vh;
   left: 0vw;
   padding-top: 23vh;
-  transition: transform 0.5s;
-  transform: rotate(-10deg) scale(2);
-  
-  &.menuPage {
-    transform: rotate(0deg) scale(1);
-    transition: transform 0.5s 0.2s;
-  }
 `;
 
 export const Links = styled(Link)`

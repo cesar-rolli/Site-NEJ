@@ -23,21 +23,15 @@ import foto1 from '../../assets/foto1.png';
 
 const Header: React.FC = () => {
   const [menuPage, setMenuPage] = useState(true);
-  const [rotateIcon, setRotateIcon] = useState(true);
 
   const handleClick = () => {
     setMenuPage(!menuPage);
     if (menuPage) {
       document.body.style.overflow = "hidden"
-      setRotateIcon(false);
     } 
     else {
       document.body.style.overflow = "scroll"
     }
-  }
-
-  const rotate = () => {
-    setRotateIcon(!rotateIcon);
   }
 
 	return (
@@ -45,10 +39,8 @@ const Header: React.FC = () => {
     <ContainerHeader className={menuPage ? "" : "menuPage"}>
       <ImgLink to={"/"}><Logo src={nbranco} /></ImgLink>
         <MenuList 
-          onMouseEnter={rotate}
-          onMouseLeave={rotate}
           onClick={handleClick}>
-          <MenuIcon className={rotateIcon ? "" : "rotate"} />
+          <MenuIcon />
       </MenuList>
     </ContainerHeader>
 
@@ -56,10 +48,8 @@ const Header: React.FC = () => {
       <Header2>
         <ImgLink to={"/"}><Logo2 src={nej} /></ImgLink>
         <MenuList2
-          onMouseEnter={rotate}
-          onMouseLeave={rotate}
           onClick={handleClick}>
-          <CloseIcon className={rotateIcon ? "" : "rotate"} />
+          <CloseIcon />
         </MenuList2>
       </Header2>
       <LeftImage src={foto1} className={menuPage ? "" : "menuPage"}/>

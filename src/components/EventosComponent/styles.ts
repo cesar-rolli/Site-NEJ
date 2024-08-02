@@ -4,7 +4,6 @@ import { NavigateBefore, NavigateNext } from "../../styles/Icons";
 
 export const Container = styled.div`
   width: 100vw;
-  height: 105vw;
   display: flex;
   justify-content: center;
   align-items: center;

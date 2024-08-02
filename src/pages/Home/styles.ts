@@ -114,7 +114,7 @@ export const ValoresRede = styled.div`
 	flex-direction: column;
 	align-items: center;
 	text-align: center;
-	padding-top: 5vh;
+  margin: 2vh 0;
 
   > h1 {
     font-size: 10vh;
@@ -132,17 +132,6 @@ export const ValoresRede = styled.div`
 	@media (min-width: 960px) {
     align-items: start;
     text-align: start;
-  }
-`;
-
-export const Divisor = styled.div`
-  width: 80vw;
-  height: 1px;
-  background: var(--azul);
-  margin-top: 5vh;
-
-	@media (min-width: 960px) {
-    width: 40vw;
   }
 `;
 
@@ -208,27 +197,6 @@ export const ContainerParceiros = styled.div`
   }
 `;
 
-export const BlocoParceiros = styled.div`
-  display: flex;
-  flex-direction: column;
-  justify-content: space-around;
-	align-items: center;
-	width: 70vw;
-
-	@media (min-width: 960px) {
-    flex-direction: row;
-  }
-`;
-
-export const LogoParceiro = styled.img`
-  display: flex;
-  width: 50vw;
-
-	@media (min-width: 960px) {
-    width: 20vw;
-  }
-`;
-
 // SOBRE NOS
 export const ContainerSobreNos = styled.div`
   width: 100vw;
@@ -246,7 +214,7 @@ export const ContainerSobreNos = styled.div`
   }
 
   > h2 {
-    text-align: justify;
+    text-align: start;
     width: 70vw;
     font-weight: 400;
   
@@ -267,12 +235,12 @@ export const ContainerSobreNos = styled.div`
 
 export const SobreNosImg = styled.img`
   display: flex;
-  width: 70vw;
+  width: 40vw;
   margin-top: 5vh;
 	border-radius: 1vw;
 	margin-bottom: 5vh;
   
 	@media (min-width: 960px) {
-    width: 50vw;
+    width: 30vw;
   }
 `;

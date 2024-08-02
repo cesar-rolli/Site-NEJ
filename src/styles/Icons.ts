@@ -3,7 +3,8 @@ export {
   Menu,
   MailOutline,
   NavigateNext,
-  NavigateBefore
+  NavigateBefore,
+  KeyboardArrowDown
 } from "styled-icons/material";
 
 export {
