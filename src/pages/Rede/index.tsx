@@ -245,17 +245,23 @@ const Rede: React.FC = () => {
         <Adm className={administracao ? "administracao" : ""}>
           <ShowEJs>
             <DetalhesEJs>
-              <LogoEJ src={relab} />
+              <a href="https://www.instagram.com/relabjrconsultoria/">
+                <LogoEJ src={relab} />
+              </a>
               <h1>Relab</h1>
               <p>Gestão e Negócios<br/>Unisinos</p>
             </DetalhesEJs>
             <DetalhesEJs>
-              <LogoEJ src={legacy} />
+              <a href="https://www.instagram.com/legacypucrs/">
+                <LogoEJ src={legacy} />
+              </a>
               <h1>Legacy</h1>
               <p>Consultoria Empresarial<br/>PUC</p>
             </DetalhesEJs>
             <DetalhesEJs>
-              <LogoEJ src={ps} />
+              <a href="https://www.instagram.com/ps.junior/">
+                <LogoEJ src={ps} />
+              </a>
               <h1>PS Junior</h1>
               <p>Consultoria empresarial<br/>UFRGS</p>
             </DetalhesEJs>
@@ -264,7 +270,9 @@ const Rede: React.FC = () => {
         <Agro className={agronomia ? "agronomia" : ""}>
           <ShowEJs>
             <DetalhesEJs>
-              <LogoEJ src={incentive} />
+              <a href="https://www.instagram.com/incentivejunior/">
+                <LogoEJ src={incentive} />
+              </a>
               <h1>Incentive</h1>
               <p>Agronomia<br/>UFRGS</p>
             </DetalhesEJs>
@@ -273,7 +281,9 @@ const Rede: React.FC = () => {
         <Contabeis className={contabilidade ? "contabilidade" : ""}>
           <ShowEJs>
             <DetalhesEJs>
-              <LogoEJ src={equilibrio} />
+              <a href="https://www.instagram.com/equilibrioufrgs/">
+                <LogoEJ src={equilibrio} />
+              </a>
               <h1>Equilíbrio</h1>
               <p>Contabilidade<br/>UFRGS</p>
             </DetalhesEJs>
@@ -282,7 +292,9 @@ const Rede: React.FC = () => {
         <Design className={design ? "design" : ""}>
           <ShowEJs>
             <DetalhesEJs>
-              <LogoEJ src={faisca} />
+              <a href="https://www.instagram.com/faiscadesignjr/">
+                <LogoEJ src={faisca} />
+              </a>
               <h1>Faísca</h1>
               <p>Design<br/>UFRGS</p>
             </DetalhesEJs>
@@ -291,7 +303,9 @@ const Rede: React.FC = () => {
         <Direito className={direito ? "direito" : ""}>
           <ShowEJs>
             <DetalhesEJs>
-              <LogoEJ src={escritorio} />
+              <a href="https://www.instagram.com/ejcirnelima/">
+                <LogoEJ src={escritorio} />
+              </a>
               <h1>Escritório Ruy Cirne Lima</h1>
               <p>Direito<br/>UFRGS</p>
             </DetalhesEJs>
@@ -300,75 +314,101 @@ const Rede: React.FC = () => {
         <Engenharia className={engenharia ? "engenharia" : ""}>
           <ShowEJs>
             <DetalhesEJs>
-              <LogoEJ src={catalisa} />
+              <a href="https://www.instagram.com/catalisajr/">
+                <LogoEJ src={catalisa} />
+              </a>
               <h1>Catalisa</h1>
               <p>Engenharia química<br/>UFRGS</p>
             </DetalhesEJs>
             <DetalhesEJs>
-              <LogoEJ src={ejminas} />
+              <a href="https://www.instagram.com/ejminas/">
+                <LogoEJ src={ejminas} />
+              </a>
               <h1>EJMinas</h1>
               <p>Engenharia de minas<br/>UFRGS</p>
             </DetalhesEJs>
             <DetalhesEJs>
-              <LogoEJ src={eme} />
+              <a href="https://www.instagram.com/emejrufrgs/">
+                <LogoEJ src={eme} />
+              </a>
               <h1>EME Júnior</h1>
               <p>Engenharia de materiais<br/>UFRGS</p>
             </DetalhesEJs>
           </ShowEJs>
           <ShowEJs>
             <DetalhesEJs>
-              <LogoEJ src={epr} />
+              <a href="https://www.instagram.com/eprconsultoria/">
+                <LogoEJ src={epr} />
+              </a>
               <h1>EPR Consultoria</h1>
               <p>Engenharia de produção<br/>UFRGS</p>
             </DetalhesEJs>
             <DetalhesEJs>
-              <LogoEJ src={eali} />
+              <a href="https://www.instagram.com/ealiconsultoriajr/">
+                <LogoEJ src={eali} />
+              </a>
               <h1>Eali</h1>
               <p>Engenharia de alimentos<br/>UFRGS</p>
             </DetalhesEJs>
             <DetalhesEJs>
-              <LogoEJ src={enfitec} />
+              <a href="https://www.instagram.com/enfitecjunior/">
+                <LogoEJ src={enfitec} />
+              </a>
               <h1>Enfitec Júnior</h1>
               <p>Engenharia física<br/>UFRGS</p>
             </DetalhesEJs>
           </ShowEJs>
           <ShowEJs>
             <DetalhesEJs>
-              <LogoEJ src={enger} />
+              <a href="https://www.instagram.com/engersolutionej/">
+                <LogoEJ src={enger} />
+              </a>
               <h1>Enger Solutions</h1>
               <p>Engenharia agroindustrial<br/>FURG-SAP</p>
             </DetalhesEJs>
             <DetalhesEJs>
-              <LogoEJ src={hidrologica} />
+              <a href="https://www.instagram.com/hidrologica/">
+                <LogoEJ src={hidrologica} />
+              </a>
               <h1>Hidrológica</h1>
               <p>Engenharia hídrica<br/>UFRGS</p>
             </DetalhesEJs>
             <DetalhesEJs>
-              <LogoEJ src={ide} />
+              <a href="https://www.instagram.com/ide_jr/">
+                <LogoEJ src={ide} />
+              </a>
               <h1>IDE</h1>
               <p>Ciência e engenharia de computação<br/>UFRGS</p>
             </DetalhesEJs>
           </ShowEJs>
           <ShowEJs>
             <DetalhesEJs>
-              <LogoEJ src={mandala} />
+              <a href="https://www.instagram.com/ejmandala/">
+                <LogoEJ src={mandala} />
+              </a>
               <h1>Mandala</h1>
               <p>Engenharia ambiental<br/>UFRGS</p>
             </DetalhesEJs>
             <DetalhesEJs>
-              <LogoEJ src={otmza} />
+              <a href="https://www.instagram.com/otmza.ej/">
+                <LogoEJ src={otmza} />
+              </a>
               <h1>OTMZA Júnior</h1>
               <p>Engenharia mecânica<br/>UFRGS</p>
             </DetalhesEJs>
             <DetalhesEJs>
-              <LogoEJ src={renova} />
+              <a href="https://www.instagram.com/renova_jr/">
+                <LogoEJ src={renova} />
+              </a>
               <h1>Renova Júnior</h1>
               <p>Engenharia de energia<br/>UFRGS</p>
             </DetalhesEJs>
           </ShowEJs>
           <ShowEJs>
             <DetalhesEJs>
-              <LogoEJ src={sinc} />
+              <a href="https://www.instagram.com/sincjunior/">
+                <LogoEJ src={sinc} />
+              </a>
               <h1>Sinc Júnior</h1>
               <p>Engenharia elétrica & engenharia de controle e automação<br/>UFRGS</p>
             </DetalhesEJs>
@@ -377,7 +417,9 @@ const Rede: React.FC = () => {
         <Geo className={geociencias ? "geociencias" : ""}>
           <ShowEJs>
             <DetalhesEJs>
-              <LogoEJ src={petra} />
+              <a href="https://www.instagram.com/petrajrpoa/">
+                <LogoEJ src={petra} />
+              </a>
               <h1>Petra</h1>
               <p>Geociências<br/>UFRGS</p>
             </DetalhesEJs>
@@ -386,7 +428,9 @@ const Rede: React.FC = () => {
         <Quimica className={quimica ? "quimica" : ""}>
           <ShowEJs>
             <DetalhesEJs>
-              <LogoEJ src={quimlabor} />
+              <a href="https://www.instagram.com/quimlaborjr/">
+                <LogoEJ src={quimlabor} />
+              </a>
               <h1>Quimlabor</h1>
               <p>Química<br/>UFRGS</p>
             </DetalhesEJs>
@@ -395,41 +439,55 @@ const Rede: React.FC = () => {
         <Saude className={saude ? "saude" : ""}>
           <ShowEJs>
             <DetalhesEJs>
-              <LogoEJ src={ceanut} />
+              <a href="https://www.instagram.com/ceanut.ej/">
+                <LogoEJ src={ceanut} />
+              </a>
               <h1>CEANUT</h1>
               <p>Nutrição<br/>UFRGS</p>
             </DetalhesEJs>
             <DetalhesEJs>
-              <LogoEJ src={chemsul} />
+              <a href="https://www.instagram.com/chemsul/">
+                <LogoEJ src={chemsul} />
+              </a>
               <h1>Chemsul</h1>
               <p>Química medicinal<br/>UFCSPA</p>
             </DetalhesEJs>
             <DetalhesEJs>
-              <LogoEJ src={cincolinha} />
+              <a href="https://www.instagram.com/cincolinhajr/">
+                <LogoEJ src={cincolinha} />
+              </a>
               <h1>Cincolinha</h1>
               <p>Biotecnologia<br/>UFRGS</p>
             </DetalhesEJs>
           </ShowEJs>
           <ShowEJs>
             <DetalhesEJs>
-              <LogoEJ src={irradiation} />
+              <a href="https://www.instagram.com/irradiationjr/">
+                <LogoEJ src={irradiation} />
+              </a>
               <h1>Irradiation</h1>
               <p>Física médica<br/>UFCSPA</p>
             </DetalhesEJs>
             <DetalhesEJs>
-              <LogoEJ src={mova} />
+              <a href="https://www.instagram.com/movaej/">
+                <LogoEJ src={mova} />
+              </a>
               <h1>MOVA</h1>
               <p>Fisioterapia<br/>UFCSPA</p>
             </DetalhesEJs>
             <DetalhesEJs>
-              <LogoEJ src={neodonto} />
+              <a href="https://www.instagram.com/neodontojr/">
+                <LogoEJ src={neodonto} />
+              </a>
               <h1>Neodonto</h1>
               <p>Odontologia<br/>UFRGS</p>
             </DetalhesEJs>
           </ShowEJs>
           <ShowEJs>
             <DetalhesEJs>
-              <LogoEJ src={nutriacao} />
+              <a href="https://www.instagram.com/ejnutriacao/">
+                <LogoEJ src={nutriacao} />
+              </a>
               <h1>Nutriação</h1>
               <p>Nutrição<br/>UFCSPA</p>
             </DetalhesEJs>
@@ -438,7 +496,9 @@ const Rede: React.FC = () => {
         <Ri className={ri ? "ri" : ""}>
           <ShowEJs>
             <DetalhesEJs>
-              <LogoEJ src={atlantica} />
+              <a href="https://www.instagram.com/atlantica.consultoria/">
+                <LogoEJ src={atlantica} />
+              </a>
               <h1>Atlântica</h1>
               <p>Relações internacionais<br/>UFRGS</p>
             </DetalhesEJs>
