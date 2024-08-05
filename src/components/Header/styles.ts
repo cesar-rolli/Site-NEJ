@@ -131,7 +131,7 @@ export const MenuList2 = styled.div`
 `;
 
 export const Header2 = styled.div`
-  width: 90vw;
+  width: 100vw;
   left: 5vw;
   top: 0vh;
   position: absolute;
@@ -140,6 +140,10 @@ export const Header2 = styled.div`
   justify-content: space-between;
   z-index: 3;
   align-items: center;
+
+	@media (min-width: 960px) {
+    width: 90vw;
+  }
 `;
 
 export const CloseIcon = styled(Close)`
@@ -149,91 +153,46 @@ export const CloseIcon = styled(Close)`
   margin-left: 16px;
 `;
 
-export const MenuOptions = styled.div`
+export const MenuPage = styled.div`
+  display: flex;
+  flex-direction: row;
   position: absolute;
+  align-items: center;
+  justify-content: center;
+
+	@media (min-width: 960px) {
+    margin-left: 20vw;
+  }
+`;
+
+export const MenuOptions = styled.div`
   display: flex;
   flex-direction: column;
-  width: 100vw;
-  height: 60vh;
-  top: 0vh;
-  left: 0vw;
-  padding-top: 23vh;
 `;
 
 export const Links = styled(Link)`
   text-decoration: none;
   color: var(--branco);  
-  width: 80vw;
-  left: 5vw;
-  position: relative;
+  margin-left: 5vw;
   font-size: 5vh;
 
   &:hover {
     text-decoration: 2px underline var(--branco);
   }
 
-	@media (min-width: 500px) {
-    width: 20vw;
-    left: 60vw;  
-	}
-
 	@media (min-width: 960px) {
-    width: 20vw;
     left: 60vw;
     margin-top: 2vh;
-	}
-`;
-
-export const OptionButton = styled.a`
-  cursor: pointer;
-  position: relative;
-  left: 5vw;
-  padding-top: 1vh;
-  display: flex;
-  font-family: "Reem Kufi", sans-serif;
-  margin: 0;
-  text-decoration: none;
-  
-  &:hover {
-    text-decoration: 2px underline var(--branco);
-  }
-
-  &.pagina {
-    width: 20vw;
-    font-size: 5vh;
-    color: var(--branco);  
-  }
-
-  &.link {
-    width: 8vw;
-    font-size: 2vh;
-    color: var(--cinza-escuro);
-  }
-
-  @media (min-width: 500px) {
-    width: 20vw;
-    left: 60vw;  
-	}
-
-	@media (min-width: 960px) {
-    width: 10vw;
-    left: 60vw;
 	}
 `;
 
 export const LeftImage = styled.img`
   display: none;
 
-  @media (min-width: 500px) {
-  }
-
   @media (min-width: 960px) {
-    position: absolute;
     display: flex;
     width: 30vw;
     height: 30vw;
-    top: 20vh;
-    left: 15vw;
     transform: rotate(-10deg) scale(1.2);
     transition: transform 0.5s;
     

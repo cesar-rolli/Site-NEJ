@@ -65,9 +65,6 @@ const EventosComponent: React.FC = () => {
         <Foto 
           src={ListaFotos[indice + 2].nome}
           className="celular" />
-        {/* <Foto 
-          src={foto3}
-          className={show ? "" : "show"} /> */}
       </Carrossel>
       <Next onClick={handleClickNext} />
     </Container>

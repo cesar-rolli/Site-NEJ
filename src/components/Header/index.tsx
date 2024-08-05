@@ -14,7 +14,8 @@ import {
   MenuList2,
   // OptionButton,
   Links,
-  ImgLink
+  ImgLink,
+  MenuPage
 } from "./styles";
 
 import nbranco from '../../assets/nbranco.png';
@@ -52,25 +53,18 @@ const Header: React.FC = () => {
           <CloseIcon />
         </MenuList2>
       </Header2>
-      <LeftImage src={foto1} className={menuPage ? "" : "menuPage"}/>
-      <MenuOptions className={menuPage ? "" : "menuPage"}>
-        {/* <Links to={"/nejflix"}>NEJFLIX</Links> */}
-        <Links to={"/"}>Início</Links>
-        <Links to={"/portal"}>Portal</Links>
-        <Links to={"/eventos"}>Eventos</Links>
-        <Links to={"/rede-nej-poa"}>Rede NEJ POA</Links>
-        <Links to={"/nossos-parceiros"}>Nossos parceiros</Links>
-        <Links to={"/sobre-nos"}>Sobre nós</Links>
-        <Links to={"/"}>Blog</Links>
-        {/* <OptionButton 
-          className={"link"}
-          href="https://www.instagram.com/nejpoa"
-          >Instagram</OptionButton>
-        <OptionButton
-          className={"link"}
-          href="https://www.linkedin.com/company/nejpoa"
-          >LinkedIn</OptionButton> */}
+      <MenuPage>
+        <LeftImage src={foto1} className={menuPage ? "" : "menuPage"}/>
+        <MenuOptions className={menuPage ? "" : "menuPage"}>
+          {/* <Links to={"/nejflix"}>NEJFLIX</Links> */}
+          <Links to={"/"}>Início</Links>
+          {/* <Links to={"/portal"}>Portal</Links> */}
+          <Links to={"/eventos"}>Eventos</Links>
+          <Links to={"/rede-nej-poa"}>Rede NEJ POA</Links>
+          <Links to={"/nossos-parceiros"}>Nossos parceiros</Links>
+          <Links to={"/sobre-nos"}>Sobre nós</Links>
         </MenuOptions>
+      </MenuPage>
     </ContainerMenu>
     </>
   );
