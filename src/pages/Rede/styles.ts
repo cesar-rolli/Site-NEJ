@@ -88,10 +88,10 @@ export const ListaArea = styled.div`
 	cursor: pointer;
 	border-radius: 16px;
 	border: 3px solid var(--laranja);
+	margin: 5vh 0;
 
 	@media (min-width: 960px) {
 		width: 20vw;
-		margin: 5vh 0;
 	}
 `;
 
@@ -115,10 +115,10 @@ export const Areas = styled.button`
 	font-size: 2vh;
 	cursor: pointer;
 	height: 4vh;
-	width: 15vw;
+	width: 60vw;
 
 	@media (min-width: 960px) {
-
+		width: 15vw;
 	}
 `;
 
@@ -141,9 +141,9 @@ export const LegendaLista = styled.div`
 	flex-direction: row;
 	align-items: center;
 	justify-content: space-between;
+	padding: 3vh 3vw 0 3vw; 
 	
 	> p {
-		padding: 1.5vh 0; 
 		font-weight: 500;
 		font-family: "Comfortaa", sans-serif;
 		font-size: 2.5vh;
@@ -152,12 +152,8 @@ export const LegendaLista = styled.div`
 	}
 
 	@media (min-width: 960px) {
-		padding: 2vh 1vw 0 1vw; 
+		padding: 2.5vh 1vw 0 1vw; 
 	}
-`;
-
-export const AreaEJs = styled.div`
-
 `;
 
 const AreaDasEJs = css`
@@ -256,16 +252,15 @@ export const ShowEJs = styled.div`
 	@media (min-width: 960px) {
 		flex-direction: row;
 	}
-	`;
+`;
 	
-	export const DetalhesEJs = styled.div`
+export const DetalhesEJs = styled.div`
 	display: flex;
 	flex-direction: column;
 	align-items: center;
 	text-align: center;
-	width: 20vw;
-	height: 20vw;
-	margin: 1vw;
+	width: 50vw;
+	margin: 2vw;
 
 	> h1 {
 		font-size: 4vh;
@@ -278,10 +273,20 @@ export const ShowEJs = styled.div`
 		color: var(--preto);
 		line-height: 1.3;
 	}
+
+	@media (min-width: 960px) {
+		width: 20vw;
+		margin: 1vw;
+	}
 `;
 
 export const LogoEJ = styled.img`
-	width: 10vw;
-	height: 10vw;
+	width: 40vw;
+	height: 40vw;
 	border-radius: 16px;
+
+	@media (min-width: 960px) {
+		width: 10vw;
+		height: 10vw;
+	}
 `;

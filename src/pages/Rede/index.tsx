@@ -9,7 +9,6 @@ import {
   DropDown,
   DropDownIcon,
   LegendaLista,
-  AreaEJs,
   Adm,
   Agro,
   Contabeis,
@@ -241,7 +240,7 @@ const Rede: React.FC = () => {
         </DropDown>
       </ListaArea>
 
-      <AreaEJs>
+      <>
         <Adm className={administracao ? "administracao" : ""}>
           <ShowEJs>
             <DetalhesEJs>
@@ -504,7 +503,7 @@ const Rede: React.FC = () => {
             </DetalhesEJs>
           </ShowEJs>
         </Ri>
-      </AreaEJs>
+      </>
       
       <a href="https://drive.google.com/file/d/1uWfHNtc5fqWu3stMmTbpCRHnDBvBbNun/view?usp=sharing">
         <ServicosRede><p>Veja os serviços da nossa rede!</p></ServicosRede>
