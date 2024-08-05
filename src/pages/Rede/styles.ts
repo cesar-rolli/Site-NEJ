@@ -13,7 +13,7 @@ export const Container = styled.div`
 		font-size: 6vh;
 		color: var(--laranja);
 		font-family: "Comfortaa", sans-serif;
-		margin-top: 15vh;
+		margin: 15vh 0 5vh 0;
 	}
 
 	> h2 {
@@ -40,17 +40,6 @@ export const Foto = styled.img`
 	@media (min-width: 960px) {
     width: 70vw;
     border-radius: 1vw;
-    top: 10vh;
-  }
-
-  &.celular {
-    width: 0;
-    height: 0;
-
-    @media (min-width: 960px) {
-      width: 46vh;
-      height: 70vh;
-    }
   }
 `;
 
@@ -60,7 +49,7 @@ export const ServicosRede = styled.button`
 	background: var(--branco);
 	cursor: pointer;
 	border-radius: 16px;
-	border: 3px solid var(--laranja);
+	border: 0.5vh solid var(--laranja);
 
 	> p {
     font-weight: bold;
@@ -87,7 +76,7 @@ export const ListaArea = styled.div`
 	background: var(--branco);
 	cursor: pointer;
 	border-radius: 16px;
-	border: 3px solid var(--laranja);
+	border: 0.5vh solid var(--laranja);
 	margin: 5vh 0;
 
 	@media (min-width: 960px) {
@@ -104,7 +93,7 @@ export const DropDown = styled.div`
 		flex-direction: column;
 		background: var(--branco);
 		border-radius: 16px;
-		border: 3px solid var(--laranja);
+		border: 0.5vh solid var(--laranja);
 		z-index: 3;
 	}
 `;
@@ -115,10 +104,10 @@ export const Areas = styled.button`
 	font-size: 2vh;
 	cursor: pointer;
 	height: 4vh;
-	width: 60vw;
+	width: 76vw;
 
 	@media (min-width: 960px) {
-		width: 15vw;
+		width: 19vw;
 	}
 `;
 

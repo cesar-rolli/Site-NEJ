@@ -12,7 +12,6 @@ import {
   MenuList,
   MenuOptions,
   MenuList2,
-  // OptionButton,
   Links,
   ImgLink,
   MenuPage
@@ -56,7 +55,6 @@ const Header: React.FC = () => {
       <MenuPage>
         <LeftImage src={foto1} className={menuPage ? "" : "menuPage"}/>
         <MenuOptions className={menuPage ? "" : "menuPage"}>
-          {/* <Links to={"/nejflix"}>NEJFLIX</Links> */}
           <Links to={"/"}>Início</Links>
           {/* <Links to={"/portal"}>Portal</Links> */}
           <Links to={"/eventos"}>Eventos</Links>

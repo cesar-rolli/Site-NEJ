@@ -168,6 +168,14 @@ export const MenuPage = styled.div`
 export const MenuOptions = styled.div`
   display: flex;
   flex-direction: column;
+
+  transform: rotate(-10deg) scale(1.2);
+  transition: transform 0.5s;
+  
+  &.menuPage {
+    transform: rotate(0deg) scale(1);
+    transition: transform 0.5s 0.2s;
+  }
 `;
 
 export const Links = styled(Link)`

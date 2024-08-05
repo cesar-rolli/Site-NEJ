@@ -3,6 +3,7 @@ import React from "react";
 import {
   Container, 
   ContainerSobreNos, 
+  Descricao, 
   SobreNosImage,
 } from './styles';
 
@@ -21,15 +22,24 @@ const SobreNos: React.FC = () => {
       <h1>Sobre Nós</h1>
       <ContainerSobreNos>
         <SobreNosImage src={sobrenos2}/>
-        <h2>REPRESENTAMOS A REDE<br/>através de nossa diversidade, frente às instituições e no ecossistema empreendedor.</h2>
+        <Descricao>
+          <h2>REPRESENTAMOS A REDE</h2>
+          <p>através de nossa diversidade, frente às instituições e no ecossistema empreendedor.</p>
+        </Descricao>
       </ContainerSobreNos>
       <ContainerSobreNos>
         <SobreNosImage src={sobrenos3}/>
-        <h2>ENGAJAMOS A REDE<br/>sendo exemplo, através de eventos de qualidade para capacitar, unir e desenvolver nossos empreendedores, por meio de nosso conselho e prestando suporte de excelência.</h2>
+        <Descricao>
+          <h2>ENGAJAMOS A REDE</h2>
+          <p>sendo exemplo, através de eventos de qualidade para capacitar, unir e desenvolver nossos empreendedores, por meio de nosso conselho e prestando suporte de excelência.</p>
+        </Descricao>
       </ContainerSobreNos>
       <ContainerSobreNos>
         <SobreNosImage src={sobrenos4}/>
-        <h2>FORTALECEMOS A REDE<br/>por meio de parcerias e de uma jornada complementar para a empresa júnior.</h2>
+        <Descricao>
+          <h2>FORTALECEMOS A REDE</h2>
+          <p>por meio de parcerias e de uma jornada complementar para a empresa júnior.</p>
+        </Descricao>
       </ContainerSobreNos>
       
       <Contato />
