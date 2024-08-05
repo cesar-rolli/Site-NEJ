@@ -1,4 +1,4 @@
-import styled from "styled-components";
+import styled, { css } from "styled-components";
 
 import { KeyboardArrowDown } from "../../styles/Icons";
 
@@ -59,8 +59,8 @@ export const ServicosRede = styled.button`
 	height: 10vh;
 	background: var(--branco);
 	cursor: pointer;
-	border-radius: 5vh;
-	border: 4px solid var(--laranja);
+	border-radius: 16px;
+	border: 3px solid var(--laranja);
 
 	> p {
     font-weight: bold;
@@ -86,11 +86,12 @@ export const ListaArea = styled.div`
 	height: 10vh;
 	background: var(--branco);
 	cursor: pointer;
-	border-radius: 5vh;
-	border: 4px solid var(--laranja);
+	border-radius: 16px;
+	border: 3px solid var(--laranja);
 
 	@media (min-width: 960px) {
 		width: 20vw;
+		margin: 5vh 0;
 	}
 `;
 
@@ -98,10 +99,13 @@ export const DropDown = styled.div`
 	display: none;
 
 	&.active {
+		position: absolute;
 		display: flex;
 		flex-direction: column;
-		background: #f00;
-		border-radius: 4vh;
+		background: var(--branco);
+		border-radius: 16px;
+		border: 3px solid var(--laranja);
+		z-index: 3;
 	}
 `;
 
@@ -111,6 +115,7 @@ export const Areas = styled.button`
 	font-size: 2vh;
 	cursor: pointer;
 	height: 4vh;
+	width: 15vw;
 
 	@media (min-width: 960px) {
 
@@ -135,10 +140,10 @@ export const LegendaLista = styled.div`
 	display: flex;
 	flex-direction: row;
 	align-items: center;
-	padding: 2.5vh 4vw 0 4vw; 
 	justify-content: space-between;
 	
 	> p {
+		padding: 1.5vh 0; 
 		font-weight: 500;
 		font-family: "Comfortaa", sans-serif;
 		font-size: 2.5vh;
@@ -153,4 +158,130 @@ export const LegendaLista = styled.div`
 
 export const AreaEJs = styled.div`
 
+`;
+
+const AreaDasEJs = css`
+	display: flex;
+	flex-direction: column;
+	width: 70vw;
+	align-items: center;
+`;
+export const Adm = styled.div`
+	display: none;
+
+	&.administracao {
+		${AreaDasEJs}
+	}
+`;
+export const Agro = styled.div`
+	display: none;
+
+	&.agronomia {
+		${AreaDasEJs}
+	}
+`;
+export const Contabeis = styled.div`
+	display: none;
+
+	&.contabilidade {
+		${AreaDasEJs}
+	}
+`;
+export const Design = styled.div`
+	display: none;
+
+	&.design {
+		${AreaDasEJs}
+	}
+`;
+export const Direito = styled.div`
+	display: none;
+
+	&.direito {
+		${AreaDasEJs}
+	}
+`;
+export const Engenharia = styled.div`
+	display: none;
+
+	&.engenharia {
+		${AreaDasEJs}
+	}
+`;
+export const Geo = styled.div`
+	display: none;
+
+	&.geociencias {
+		${AreaDasEJs}
+	}
+`;
+export const Quimica = styled.div`
+	display: none;
+
+	&.quimica {
+		${AreaDasEJs}
+	}
+`;
+export const Saude = styled.div`
+	display: none;
+
+	&.saude {
+		${AreaDasEJs}
+	}
+`;
+export const Ri = styled.div`
+	display: none;
+
+	&.ri {
+		${AreaDasEJs}
+	}
+`;
+
+export const CloseDropDown = styled.div`
+	display: none;
+
+	&.active {
+		display: flex;
+		width: 100vw;
+		height: 200vh;
+		z-index: 2;
+		position: absolute;
+	}
+`;
+
+export const ShowEJs = styled.div`
+	display: flex;
+	flex-direction: column;
+	
+	@media (min-width: 960px) {
+		flex-direction: row;
+	}
+	`;
+	
+	export const DetalhesEJs = styled.div`
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	text-align: center;
+	width: 20vw;
+	height: 20vw;
+	margin: 1vw;
+
+	> h1 {
+		font-size: 4vh;
+		color: var(--preto);
+		font-family: "Comfortaa", sans-serif;
+		margin: 3vh 0 1vh 0;
+	}
+	> p {
+		font-size: 2.2vh;
+		color: var(--preto);
+		line-height: 1.3;
+	}
+`;
+
+export const LogoEJ = styled.img`
+	width: 10vw;
+	height: 10vw;
+	border-radius: 16px;
 `;

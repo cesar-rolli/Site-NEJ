@@ -69,7 +69,7 @@ const Home: React.FC = () => {
               </ValoresRede>
               <ValoresRede>
                 <h1>+{n_empresarios}</h1>
-                <p>Estudantes e Empresários Juniores<br/>na regiãometropolitana de Porto Alegre</p>
+                <p>Estudantes e Empresários Juniores<br/>na região metropolitana de Porto Alegre</p>
               </ValoresRede>
             </ContainerRede>
             <p>Somos o Núcleo que da suporte, fortalece o ecossistema gerando oportunidades para a rede, desenvolve e aprimora as EJ's da região metropolitana de Porto Alegre.</p>

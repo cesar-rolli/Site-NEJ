@@ -12,7 +12,7 @@ export const Container = styled.div`
 	> h1 {
 		font-size: 8vh;
 		color: var(--laranja);
-		font-family: "Reem Kufi", sans-serif;
+		font-family: "Comfortaa", sans-serif;
 		margin-top: 15vh;
 	}
 

@@ -32,7 +32,7 @@ const NossosParceiros: React.FC = () => {
         </WrapperIndividual>
         <Divisor />
         <WrapperIndividual>
-          <a href='https://bit.ly/3W0jiZx'>
+          <a href='https://bit.ly/3LR753e'>
             <LogoParceiro src={lojasqq}/>
           </a>
           <h1>Sendo uma das maiores varejistas do Brasil e fundada no Rio Grande do Sul, conta com mais de 300 lojas nos estados do sul do país, além de estar presente em São Paulo e Minas Gerais.</h1>

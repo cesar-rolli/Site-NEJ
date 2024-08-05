@@ -57,7 +57,7 @@ export const FaleConosco = styled.button`
 	height: 10vh;
 	background: var(--branco);
 	cursor: pointer;
-	border-radius: 5vh;
+	border-radius: 16px;
 	border: 4px solid var(--laranja);
 
 	> p {

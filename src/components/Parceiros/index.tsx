@@ -23,7 +23,7 @@ const Parceiros: React.FC = () => {
         </a>
       </BlocoParceiros>
       <BlocoParceiros>
-        <a href='https://bit.ly/3W0jiZx'>
+        <a href='https://bit.ly/3LR753e'>
           <LogoParceiro src={lojasqq}/>
         </a>
         <a href='https://bit.ly/3VGV6tB'>
