@@ -58,6 +58,7 @@ export const ServicosRede = styled.button`
     color: var(--preto);
 		text-decoration: none;
 	}
+
 	&:hover {
 		background: var(--laranja);
 		> p {
@@ -88,6 +89,7 @@ export const DropDown = styled.div`
 	display: none;
 
 	&.active {
+		margin-top: 2.5vh;
 		position: absolute;
 		display: flex;
 		flex-direction: column;
@@ -95,6 +97,10 @@ export const DropDown = styled.div`
 		border-radius: 16px;
 		border: 0.5vh solid var(--laranja);
 		z-index: 3;
+
+		@media (min-width: 960px) {
+			margin-top: 2vh;
+		}
 	}
 `;
 
@@ -109,6 +115,11 @@ export const Areas = styled.button`
 	@media (min-width: 960px) {
 		width: 19vw;
 	}
+
+	&:hover {
+    background: var(--cinza-claro);
+		border-radius: 16px;
+  }
 `;
 
 export const DropDownIcon = styled(KeyboardArrowDown)`
