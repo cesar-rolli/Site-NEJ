@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import styled from "styled-components";
 
 export const Container = styled.div`
@@ -154,13 +155,13 @@ export const ContainerEventos = styled.div `
 	flex-direction: column;
 	width: 100vw;
 	height: 75vh;
-	background: var(--cinza-claro);
+	background: var(--branco);
 	align-items: center;
   margin-top: 10vh;
 
 	> h1 {
     font-size: 8vh;
-    color: var(--preto);
+    color: var(--azul);
     font-family: "Comfortaa", sans-serif;
     padding: 3vh 0;
 	}
@@ -201,25 +202,14 @@ export const ContainerSobreNos = styled.div`
   width: 100vw;
   display: flex;
   flex-direction: column;
-  background: var(--cinza-claro);
+  background: var(--branco);
   
   align-items: center;  
 
   > h1 {
     font-size: 8vh;
-    color: var(--preto);
+    color: var(--azul);
     font-family: "Comfortaa", sans-serif;
-    padding: 3vh 0;
-  }
-
-  > h2 {
-    text-align: start;
-    width: 70vw;
-    font-weight: 400;
-  
-    font-size: 2.5vh;
-    color: var(--preto);
-    line-height: 1.3;
   }
 
 	@media (min-width: 960px) {
@@ -235,11 +225,59 @@ export const ContainerSobreNos = styled.div`
 export const SobreNosImg = styled.img`
   display: flex;
   width: 40vw;
-  margin-top: 5vh;
 	border-radius: 1vw;
-	margin-bottom: 5vh;
   
 	@media (min-width: 960px) {
     width: 30vw;
+  }
+`;
+
+export const Apresentacao = styled.div`
+  display: flex;
+  flex-direction: row;
+  width: 70vw;
+  justify-content: center;
+  align-items: center;
+  margin: 3vh 0 5vh 0;
+`;
+
+export const CTASobreNos = styled.div`
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  > h2 {
+    margin-right: 2vw;
+    text-align: start;
+    font-weight: 400;
+    font-family: "Comfortaa", sans-serif;  
+    font-size: 2.5vh;
+    color: var(--preto);
+    line-height: 1.3;
+    }
+`;
+
+export const Links = styled(Link)`
+  text-decoration: none;
+  display: flex;
+	cursor: pointer;
+	height: 5vh;
+	width: 20vw;
+  border: 2px solid var(--azul);
+  border-radius: 16px;
+  margin-top: 5vh;
+  color: var(--azul);
+  justify-content: center;
+  align-items: center;
+
+  > p {
+    font-weight: bold;
+    font-family: "Comfortaa", sans-serif;
+    font-size: 2vh;
+  }
+
+	&:hover {
+    background: var(--azul);
+    color: var(--branco);
   }
 `;

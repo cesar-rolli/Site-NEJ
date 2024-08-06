@@ -16,7 +16,7 @@ export const Container = styled.div`
 const Arrow = css`
   width: 8vh;
   height: 8vh;
-  color: var(--laranja);
+  color: var(--azul);
   cursor: pointer;
 `;
 

@@ -54,8 +54,6 @@ const EventosComponent: React.FC = () => {
     }
   }
 
-  setTimeout(handleClickNext, 10000);
-
   return(
     <Container>
       <Before onClick={handleClickBefore} />

@@ -1,4 +1,4 @@
-import styled from "styled-components";
+import styled, { css } from "styled-components";
 
 import {
   Instagram,
@@ -14,48 +14,51 @@ export const Container = styled.div`
   align-items: center;
   justify-content: center;
   text-align: center;
+  background: var(--laranja);
   
   > p {
     padding: 3vh 0 0 0;
     width: 60vw;
+    color: var(--branco-logo);
   }
 
   @media (min-width: 960px) {
-    padding: 5vh 0;
+    padding: 1vh 0;
     > p {
-      padding: 0;
+      padding: 3vh 0;
       width: 100vw;
     }
   }
 `;
 
 export const ContainerContato = styled.div`
-  display: grid;
+  display: flex;
+  flex-direction: column;
   width: 70vw;
   justify-content: center;
   align-items: center;
 
 @media (min-width: 960px) {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     align-items: center;
   }
 `;
 
 export const NejPoaContato = styled.img`
   width: 50vw;
-  margin: -5vh 0;
 
   @media (min-width: 960px) {
     margin: 0;
-    width: 30vw;
-    padding-right: 10vw;
+    width: 20vw;
   }
 `;
 
 export const ListaContatos = styled.div`
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
+  width: 10vw;
+  justify-content: space-between;
 `;
 
 export const MeioContato = styled.a`
@@ -66,13 +69,13 @@ export const MeioContato = styled.a`
   > h1 {
     padding-left: 1vw;
     font-size: 2vh;
-    color: var(--preto);
+    color: var(--branco);
     font-weight: 400;
   }
 
   &:hover {
     > h1 {
-      color: var(--laranja);
+      color: var(--azul);
     }
   }
  
@@ -83,38 +86,28 @@ export const MeioContato = styled.a`
   }
 `;
 
-export const InstagramIcon = styled(Instagram)`
+const Icons = css`
   height: 6vw;
-  fill: var(--preto);
+  fill: var(--branco-logo);
+  background: var(--azul);
+  border-radius: 1vh;
 
-  &.fillInstagramIcon{
+  &:hover {
     fill: var(--laranja);
   }
   @media (min-width: 960px) {
-    height: 4vw;
+    height: 2.5vw;
   }
+`;
+
+export const InstagramIcon = styled(Instagram)`
+  ${Icons}
 `;
 
 export const LinkedinIcon = styled(Linkedin)`
-  height: 6vw;
-  fill: var(--preto);
-
-  &.fillLinkedinIcon{
-    fill: var(--laranja);
-  }
-  @media (min-width: 960px) {
-    height: 4vw;
-  }
+  ${Icons}
 `;
 
 export const MailIcon = styled(MailOutline)`
-  height: 6vw;
-  fill: var(--preto);
-
-  &.fillMailIcon{
-    fill: var(--laranja);
-  }
-  @media (min-width: 960px) {
-    height: 4vw;
-  }
+  ${Icons}
 `;
