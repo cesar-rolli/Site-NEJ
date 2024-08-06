@@ -18,7 +18,7 @@ import Header from "../../components/Header";
 import Contato from "../../components/Contato";
 
 import time from '../../assets/time.png';
-import gasometro from '../../assets/teste.png';
+import gasometro from '../../assets/gasometro.png';
 import Eventos from "../../components/EventosComponent";
 import Parceiros from "../../components/Parceiros";
 

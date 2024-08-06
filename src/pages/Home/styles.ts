@@ -142,10 +142,9 @@ export const Gasometro = styled.img`
 
 	@media (min-width: 960px) {
     display: flex;
-    width: 40vw;
+    width: 35vw;
     height: 100vh;
     border-radius: 0 0 0 3vw;
-    top: 10vh;
   }
 `;
 
