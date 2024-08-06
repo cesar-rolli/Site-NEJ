@@ -505,7 +505,7 @@ const Rede: React.FC = () => {
         </Ri>
       </>
       
-      <a href="https://drive.google.com/file/d/1uWfHNtc5fqWu3stMmTbpCRHnDBvBbNun/view?usp=sharing">
+      <a href="https://drive.google.com/file/d/1J0TXwQU3i9M6irdnYu4scAdXgDTCqAyJ/view?usp=drive_link">
         <ServicosRede><p>Veja os serviços da nossa rede!</p></ServicosRede>
       </a>
       <Contato />
