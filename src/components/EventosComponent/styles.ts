@@ -51,7 +51,6 @@ export const Foto = styled.img`
     width: 46vh;
     height: 70vh;
     border-radius: 1vw;
-    top: 10vh;
   }
 
   &.celular {

@@ -33,25 +33,19 @@ const Home: React.FC = () => {
       setTimeout(() => setN_empresas(prev => prev += 1), 50)
 		}
     if (n_empresas >= 20 && n_empresas < 30) {
-      setTimeout(() => setN_empresas(prev => prev += 1), 80)
+      setTimeout(() => setN_empresas(prev => prev += 1), 110)
 		}
 	},[n_empresas])
 
   const [n_empresarios, setN_empresarios] = useState(0);
 	useEffect(() => {
 		if (n_empresarios < 400) {
-			setTimeout(() => setN_empresarios(prev => prev += 1), 5)
+			setTimeout(() => setN_empresarios(prev => prev += 10), 10)
 		}
-		if (n_empresarios >= 400 && n_empresarios < 430) {
-			setTimeout(() => setN_empresarios(prev => prev += 1), 20)
+		if (n_empresarios >= 400 && n_empresarios < 440) {
+			setTimeout(() => setN_empresarios(prev => prev += 1), 15)
 		}
-		if (n_empresarios >= 430 && n_empresarios < 440) {
-			setTimeout(() => setN_empresarios(prev => prev += 1), 30)
-		}
-		if (n_empresarios >= 440 && n_empresarios < 445) {
-			setTimeout(() => setN_empresarios(prev => prev += 1), 50)
-		}
-		if (n_empresarios >= 445 && n_empresarios < 450) {
+		if (n_empresarios >= 440 && n_empresarios < 450) {
 			setTimeout(() => setN_empresarios(prev => prev += 1), 80)
 		}
 	},[n_empresarios])
@@ -72,7 +66,7 @@ const Home: React.FC = () => {
               </ValoresRede>
               <ValoresRede>
                 <h1>+{n_empresarios}</h1>
-                <p>Estudantes e Empresários Juniores<br/>na região metropolitana de Porto Alegre</p>
+                <p>Estudantes e Empresários Juniores<br/>na região metropolitana de<br/>Porto Alegre</p>
               </ValoresRede>
             </ContainerRede>
             <p>Somos o Núcleo que da suporte, fortalece o ecossistema gerando oportunidades para a rede, desenvolve e aprimora as EJ's da região metropolitana de Porto Alegre.</p>

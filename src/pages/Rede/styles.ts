@@ -12,7 +12,7 @@ export const Container = styled.div`
 	> h1 {
 		font-size: 6vh;
 		color: var(--laranja);
-		font-family: "Comfortaa", sans-serif;
+		font-family: "Raleway", sans-serif;
 		margin: 15vh 0 5vh 0;
 	}
 
@@ -50,6 +50,7 @@ export const ServicosRede = styled.button`
 	cursor: pointer;
 	border-radius: 16px;
 	border: 0.5vh solid var(--laranja);
+	margin-top: 3vh;
 
 	> p {
     font-weight: bold;
@@ -272,6 +273,7 @@ export const DetalhesEJs = styled.div`
 		font-size: 2.2vh;
 		color: var(--preto);
 		line-height: 1.3;
+		font-family: "Comfortaa", sans-serif;
 	}
 
 	@media (min-width: 960px) {

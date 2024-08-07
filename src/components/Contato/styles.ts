@@ -15,6 +15,7 @@ export const Container = styled.div`
   justify-content: center;
   text-align: center;
   background: var(--laranja);
+  margin-top: 5vh;
   
   > p {
     padding: 3vh 0 0 0;
@@ -57,8 +58,12 @@ export const NejPoaContato = styled.img`
 export const ListaContatos = styled.div`
   display: flex;
   flex-direction: row;
-  width: 10vw;
+  width: 35vw;
   justify-content: space-between;
+
+  @media (min-width: 960px) {
+    width: 10vw;
+  }
 `;
 
 export const MeioContato = styled.a`
@@ -87,7 +92,7 @@ export const MeioContato = styled.a`
 `;
 
 const Icons = css`
-  height: 6vw;
+  height: 8vw;
   fill: var(--branco-logo);
   background: var(--azul);
   border-radius: 1vh;

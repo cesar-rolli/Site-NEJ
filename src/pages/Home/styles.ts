@@ -27,11 +27,6 @@ export const Wrapper = styled.div`
     font-weight: 400;
     padding-bottom: 10vh;
   }
-
-	@media (min-width: 500px) {
-	}
-	@media (min-width: 960px) {
-	}
 `;
 
 // MISSAO
@@ -40,14 +35,12 @@ export const ContainerMissao = styled.div`
   justify-content: space-between;
   width: 100vw;
   justify-content: center;
-  margin-bottom: -5vh;
 
   @media (min-width: 960px) {
     display: flex;
     flex-direction: row-reverse;
     justify-content: space-between;
     padding-left: 15vw;
-    margin-bottom: 5vh;
   }
 `;  
 
@@ -69,19 +62,20 @@ export const ContainerRede = styled.div`
 
 export const Missao = styled.div`
   width: 80vw;
-	height: 100vh;
 	text-align: center;
   margin-left: 10vw;
 
   > p {
     font-size: 2vh;
     color: var(--preto);
+    font-family: "Comfortaa", sans-serif;
+    margin: 5vh 0;
   }
 
   > h1 {
 		font-size: 6vh;
     color: var(--preto);
-    font-family: "Comfortaa", sans-serif;
+    font-family: "Raleway", sans-serif;
     margin: 5vh 0;
   }
 
@@ -100,7 +94,7 @@ export const Missao = styled.div`
     margin-left: 0;
 		> p {
 			font-size: 3vh;
-			padding: 5vh 0;
+			margin: 5vh 0;
       line-height: 1.5;
 		}
 		> h1 {
@@ -129,10 +123,13 @@ export const ValoresRede = styled.div`
     font-size: 2.3vh;
     color: var(--preto);
     line-height: 1.3;
+    font-family: "Comfortaa", sans-serif;
 	}
+
 	@media (min-width: 960px) {
     align-items: start;
     text-align: start;
+    height: 20vh;
   }
 `;
 
@@ -154,20 +151,20 @@ export const ContainerEventos = styled.div `
 	display: flex;
 	flex-direction: column;
 	width: 100vw;
-	height: 75vh;
 	background: var(--branco);
 	align-items: center;
-  margin-top: 10vh;
+  margin-bottom: 5vh;
 
 	> h1 {
-    font-size: 8vh;
+    align-self: start;
+    margin-left: 15vw;
+    font-size: 7vh;
     color: var(--azul);
-    font-family: "Comfortaa", sans-serif;
+    font-family: "Raleway", sans-serif;
     padding: 3vh 0;
 	}
 
 	@media (min-width: 960px) {
-    height: 100vh;
     > h1 {
       font-size: 12vh;
     }
@@ -178,15 +175,14 @@ export const ContainerEventos = styled.div `
 export const ContainerParceiros = styled.div`
   display: flex;
   flex-direction: column;
-  top: 30vh;
   width: 70vw;
 	align-items: center;
   
   > h1 {
-    font-size: 8vh;
+    align-self: start;
+    font-size: 7vh;
     color: var(--laranja);
-    margin: 0;
-    font-family: "Comfortaa", sans-serif;
+    font-family: "Raleway", sans-serif;
     padding: 3vh 0;
   }
 
@@ -203,13 +199,15 @@ export const ContainerSobreNos = styled.div`
   display: flex;
   flex-direction: column;
   background: var(--branco);
+  width: 70vw;
   
   align-items: center;  
 
   > h1 {
-    font-size: 8vh;
+    align-self: start;
+    font-size: 7vh;
     color: var(--azul);
-    font-family: "Comfortaa", sans-serif;
+    font-family: "Raleway", sans-serif;
   }
 
 	@media (min-width: 960px) {
@@ -224,21 +222,26 @@ export const ContainerSobreNos = styled.div`
 
 export const SobreNosImg = styled.img`
   display: flex;
-  width: 40vw;
-	border-radius: 1vw;
+  width: 70vw;
+	border-radius: 5vw;
   
 	@media (min-width: 960px) {
     width: 30vw;
+    border-radius: 1vw;
   }
 `;
 
 export const Apresentacao = styled.div`
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   width: 70vw;
   justify-content: center;
   align-items: center;
-  margin: 3vh 0 5vh 0;
+  margin-top: 3vh;
+
+	@media (min-width: 960px) {
+    flex-direction: row;    
+  }
 `;
 
 export const CTASobreNos = styled.div`
@@ -262,10 +265,10 @@ export const Links = styled(Link)`
   display: flex;
 	cursor: pointer;
 	height: 5vh;
-	width: 20vw;
+	width: 70vw;
   border: 2px solid var(--azul);
   border-radius: 16px;
-  margin-top: 5vh;
+  margin: 5vh 0;
   color: var(--azul);
   justify-content: center;
   align-items: center;
@@ -279,5 +282,10 @@ export const Links = styled(Link)`
 	&:hover {
     background: var(--azul);
     color: var(--branco);
+  }
+
+	@media (min-width: 960px) {  
+    width: 20vw;
+    margin: 5vh 0 0 0;
   }
 `;

@@ -11,7 +11,7 @@ export const Container = styled.div`
 	> h1 {
 		font-size: 8vh;
 		color: var(--laranja);
-		font-family: "Comfortaa", sans-serif;
+		font-family: "Raleway", sans-serif;
 		margin: 15vh 0 5vh 0;
 	}
 
@@ -32,7 +32,7 @@ export const ContainerDetalhes = styled.div`
     text-align: start;
     width: 70vw;
     font-weight: bold;
-		font-family: "Comfortaa", sans-serif;
+		font-family: "Raleway", sans-serif;
   
     font-size: 3vh;
     color: var(--laranja);
