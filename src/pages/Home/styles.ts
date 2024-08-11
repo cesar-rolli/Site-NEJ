@@ -236,7 +236,7 @@ export const Apresentacao = styled.div`
   flex-direction: column;
   width: 70vw;
   justify-content: center;
-  align-items: center;
+  align-items: start;
   margin-top: 3vh;
 
 	@media (min-width: 960px) {
@@ -248,6 +248,7 @@ export const CTASobreNos = styled.div`
   display: flex;
   flex-direction: column;
   justify-content: center;
+  align-items: start;
 
   > h2 {
     margin-right: 2vw;
