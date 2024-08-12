@@ -12,7 +12,6 @@ import {
   Wrapper,
   ContainerEventos,
   Gasometro,
-  Apresentacao,
   CTASobreNos,
   Links,
 } from "./styles";
@@ -84,15 +83,13 @@ const Home: React.FC = () => {
         </ContainerParceiros>
 
         <ContainerSobreNos>
-          <h1>Sobre Nós</h1>
-          <Apresentacao>
-            <CTASobreNos>
-              <h2>Somos pós juniores das EJs da nossa Rede, unidos pelo propósito do NEJ POA, dando continuidade a uma jornada de liderança e empreendedorismo, agora voltada ao desenvolvimento das empresas juniores. <br/><br/>
-                Nosso dia a dia é corrido, somos de universidades, cursos, EJ's e principalmente realidades diferentes, mas nos unimos em prol de um objetivo maior. Somos quando estamos juntos, nos apoiamos e comemoramos a cada vitória.</h2>
-              <Links to={"/sobre-nos"}><p>Veja mais!</p></Links>
-            </CTASobreNos>
-            <SobreNosImg src={time}/>
-          </Apresentacao>
+          <CTASobreNos>
+            <h1>Sobre Nós</h1>
+            <h2>Somos pós juniores das EJs da nossa Rede, unidos pelo propósito do NEJ POA, dando continuidade a uma jornada de liderança e empreendedorismo, agora voltada ao desenvolvimento das empresas juniores. <br/><br/>
+              Nosso dia a dia é corrido, somos de universidades, cursos, EJ's e principalmente realidades diferentes, mas nos unimos em prol de um objetivo maior. Somos quando estamos juntos, nos apoiamos e comemoramos a cada vitória.</h2>
+            <Links to={"/sobre-nos"}><p>Veja mais!</p></Links>
+          </CTASobreNos>
+          <SobreNosImg src={time}/>
         </ContainerSobreNos>
 
         <Contato />

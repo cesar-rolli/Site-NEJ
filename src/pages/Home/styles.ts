@@ -186,28 +186,13 @@ export const ContainerParceiros = styled.div`
 
 // SOBRE NOS
 export const ContainerSobreNos = styled.div`
-  width: 100vw;
   display: flex;
   flex-direction: column;
-  background: var(--branco);
   width: 70vw;
-  
   align-items: center;  
 
-  > h1 {
-    align-self: start;
-    font-size: 7vh;
-    color: var(--azul);
-    font-family: "Raleway", sans-serif;
-  }
-
 	@media (min-width: 960px) {
-    > h1 {
-      font-size: 12vh;
-    }
-    > h2 {
-      font-size: 3.5vh;
-    }
+    flex-direction: row;
   }
 `;
 
@@ -222,25 +207,19 @@ export const SobreNosImg = styled.img`
   }
 `;
 
-export const Apresentacao = styled.div`
-  display: flex;
-  flex-direction: column;
-  width: 70vw;
-  justify-content: center;
-  align-items: center;
-
-	@media (min-width: 960px) {
-    flex-direction: row;    
-  }
-`;
-
 export const CTASobreNos = styled.div`
   display: flex;
   flex-direction: column;
   align-items: start;
+  
+  > h1 {
+    align-self: start;
+    font-size: 7vh;
+    color: var(--azul);
+    font-family: "Raleway", sans-serif;
+  }
 
   > h2 {
-    // margin-top: 5vh;
     margin-right: 2vw;
     text-align: start;
     font-weight: 400;
@@ -248,6 +227,13 @@ export const CTASobreNos = styled.div`
     font-size: max(2.5vh, 16px);
     color: var(--preto);
     line-height: 1.3;
+    }
+
+    @media (min-width: 960px) {
+      height: 30vw;
+      > h1 {
+        font-size: 12vh;
+      }
     }
 `;
 
