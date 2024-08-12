@@ -35,7 +35,7 @@ export const WrapperIndividual = styled.div`
 	align-items: center;
 
 	> h1 {
-		font-size: 3vh;
+    font-size: max(3vh, 24px);
 		color: var(--preto);
     font-family: "Comfortaa", sans-serif;
     font-weight: 400;

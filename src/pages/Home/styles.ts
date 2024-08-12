@@ -79,21 +79,12 @@ export const Missao = styled.div`
     margin: 5vh 0;
   }
 
-	@media (min-width: 500px) {
-		> p {
-			font-size: 2.5vh;
-		}
-		> h1 {
-			font-size: 15vh;
-		}
-	}
-
 	@media (min-width: 960px) {
     width: 40vw;
     text-align: start;
     margin-left: 0;
 		> p {
-			font-size: 3vh;
+      font-size: max(3vh, 24px);
 			margin: 5vh 0;
       line-height: 1.5;
 		}
@@ -120,7 +111,7 @@ export const ValoresRede = styled.div`
   }
   
 	> p {
-    font-size: 2.3vh;
+    font-size: max(2.3vh, 16px);
     color: var(--preto);
     line-height: 1.3;
     font-family: "Comfortaa", sans-serif;
@@ -255,7 +246,7 @@ export const CTASobreNos = styled.div`
     text-align: start;
     font-weight: 400;
     font-family: "Comfortaa", sans-serif;  
-    font-size: 2.5vh;
+    font-size: max(2.5vh, 16px);
     color: var(--preto);
     line-height: 1.3;
     }

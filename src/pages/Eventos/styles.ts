@@ -34,7 +34,7 @@ export const ContainerDetalhes = styled.div`
     font-weight: bold;
 		font-family: "Raleway", sans-serif;
   
-    font-size: 3vh;
+    font-size: max(3vh, 32px);
     color: var(--laranja);
     line-height: 1.3;
 		margin-top: 3vh;
@@ -45,7 +45,7 @@ export const ContainerDetalhes = styled.div`
     font-weight: 400;
 		font-family: "Comfortaa", sans-serif;
   
-    font-size: 2.5vh;
+    font-size: max(2.5vh, 16px);
     color: var(--preto);
     line-height: 1.3;
 		margin-top: 1vh;

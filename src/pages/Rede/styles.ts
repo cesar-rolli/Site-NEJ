@@ -18,7 +18,7 @@ export const Container = styled.div`
 
 	> h2 {
 		width: 70vw;
-		font-size: 3vh;
+    font-size: max(3vh, 24px);
     font-weight: 400;
 		color: var(--preto);
 		font-family: "Comfortaa", sans-serif;
@@ -55,7 +55,7 @@ export const ServicosRede = styled.button`
 	> p {
     font-weight: bold;
 		font-family: "Comfortaa", sans-serif;
-    font-size: 2.5vh;
+    font-size: max(2.5vh, 20px);
     color: var(--preto);
 		text-decoration: none;
 	}
@@ -108,7 +108,7 @@ export const DropDown = styled.div`
 export const Areas = styled.button`
 	font-weight: 400;
 	font-family: "Comfortaa", sans-serif;
-	font-size: 2vh;
+	font-size: max(2vh, 16px);
 	cursor: pointer;
 	height: 4vh;
 	width: 76vw;
@@ -147,7 +147,7 @@ export const LegendaLista = styled.div`
 	> p {
 		font-weight: 500;
 		font-family: "Comfortaa", sans-serif;
-		font-size: 2.5vh;
+    font-size: max(2.5vh, 20px);
 		color: var(--preto);
 		text-decoration: none;
 	}
@@ -264,13 +264,13 @@ export const DetalhesEJs = styled.div`
 	margin: 2vw;
 
 	> h1 {
-		font-size: 4vh;
+    font-size: max(4vh, 32px);
 		color: var(--preto);
 		font-family: "Comfortaa", sans-serif;
 		margin: 3vh 0 1vh 0;
 	}
 	> p {
-		font-size: 2.2vh;
+    font-size: max(2.3vh, 16px);
 		color: var(--preto);
 		line-height: 1.3;
 		font-family: "Comfortaa", sans-serif;

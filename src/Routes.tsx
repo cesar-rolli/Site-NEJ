@@ -1,5 +1,3 @@
-import React from "react";
-
 import { Routes, Route } from "react-router-dom";
 
 import Home from './pages/Home';
@@ -7,7 +5,7 @@ import Rede from "./pages/Rede";
 import SobreNos from "./pages/SobreNos";
 import Eventos from "./pages/Eventos";
 import NossosParceiros from "./pages/NossosParceiros";
-import Nejflix from "./pages/Nejflix";
+import Erro404 from "./pages/Erro404";
 
 const AppRoutes = () => {
 	return (
@@ -17,7 +15,8 @@ const AppRoutes = () => {
 			<Route path="/sobre-nos" element={<SobreNos />} />
 			<Route path="/eventos" element={<Eventos />} />
 			<Route path="/nossos-parceiros" element={<NossosParceiros />} />
-			<Route path="/nejflix" element={<Nejflix />} />
+			<Route path="/404" element={<Erro404 />} />
+			<Route path="*" element={<Erro404 />} />
     </Routes>
   );
 };

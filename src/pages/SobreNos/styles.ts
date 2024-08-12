@@ -62,7 +62,7 @@ export const Descricao = styled.div`
   }
 
   > h2 {
-    font-size: 3.5vh;
+    font-size: max(3.5vh, 28px);
     color: var(--preto);
     font-weight: bold;
     font-family: "Raleway", sans-serif;
@@ -70,7 +70,7 @@ export const Descricao = styled.div`
   }
   > p {
     font-family: "Comfortaa", sans-serif;
-    font-size: 2.5vh;
+    font-size: max(2.5vh, 20px);
     color: var(--preto);
     font-weight: 400;
   }
