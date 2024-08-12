@@ -227,8 +227,7 @@ export const Apresentacao = styled.div`
   flex-direction: column;
   width: 70vw;
   justify-content: center;
-  align-items: start;
-  margin-top: 3vh;
+  align-items: center;
 
 	@media (min-width: 960px) {
     flex-direction: row;    
@@ -238,10 +237,10 @@ export const Apresentacao = styled.div`
 export const CTASobreNos = styled.div`
   display: flex;
   flex-direction: column;
-  justify-content: center;
   align-items: start;
 
   > h2 {
+    // margin-top: 5vh;
     margin-right: 2vw;
     text-align: start;
     font-weight: 400;
