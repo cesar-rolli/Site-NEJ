@@ -7,7 +7,7 @@ import {
 
 import nejpoa from '../../assets/nejpoa.png';
 
-const Erro404: React.FC = () => {
+const ImgLogo: React.FC = () => {
   return (
     <Container>
       <Logo src={nejpoa} />
@@ -15,4 +15,4 @@ const Erro404: React.FC = () => {
   );
 };
 
-export default Erro404;
+export default ImgLogo;
