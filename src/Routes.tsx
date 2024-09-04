@@ -6,6 +6,7 @@ import SobreNos from "./pages/SobreNos";
 import Eventos from "./pages/Eventos";
 import NossosParceiros from "./pages/NossosParceiros";
 import Erro404 from "./pages/Erro404";
+import Logo from "./pages/Logo";
 
 const AppRoutes = () => {
 	return (
@@ -17,6 +18,7 @@ const AppRoutes = () => {
 			<Route path="/nossos-parceiros" element={<NossosParceiros />} />
 			<Route path="/404" element={<Erro404 />} />
 			<Route path="*" element={<Erro404 />} />
+			<Route path="/logo" element={<Logo />} />
     </Routes>
   );
 };
