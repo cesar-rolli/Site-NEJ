@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from "react";
+import Helmet from "react-helmet";
 
 import { 
   ContainerParceiros,
@@ -54,6 +55,10 @@ const Home: React.FC = () => {
       <Header />
 
       <Wrapper>
+        <Helmet>
+          <title>NEJ POA - Início</title>
+          <meta property="og:image" content="../../assets/nejpoa.png" />
+        </Helmet>
         <ContainerMissao>
           <Gasometro src={gasometro} />
           <Missao>
