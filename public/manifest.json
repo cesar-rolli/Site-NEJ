@@ -8,9 +8,9 @@
       "sizes": "192x192"
     },
     {
-      "src": "nejpoa-colorido.png",
+      "src": "nejpoa.png",
       "type": "image/png",
-      "sizes": "512x512"
+      "sizes": "200x200"
     }
   ],
   "start_url": ".",

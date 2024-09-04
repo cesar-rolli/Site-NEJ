@@ -5,7 +5,7 @@ import {
   Logo
 } from "./styles";
 
-import nejpoa from '../../assets/nejpoa-colorido.png';
+import nejpoa from '../../assets/nejpoa.png';
 
 const Erro404: React.FC = () => {
   return (
