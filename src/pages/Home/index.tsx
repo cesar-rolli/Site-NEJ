@@ -62,7 +62,7 @@ const Home: React.FC = () => {
         <ContainerMissao>
           <Gasometro src={gasometro} />
           <Missao>
-            <h1>Trabalhamos<br/>em Rede</h1>
+            <h1>RNN #6:<br/>Fazemos<br/>pela Rede</h1>
             <ContainerRede>
               <ValoresRede>
                 <h1>+{n_empresas}</h1>
