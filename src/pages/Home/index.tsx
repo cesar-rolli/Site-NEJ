@@ -21,7 +21,7 @@ import Header from "../../components/Header";
 import Contato from "../../components/Contato";
 
 import time from '../../assets/time.png';
-import gasometro from '../../assets/gasometro.png';
+import gasometro from '../../assets/gasometro.webp';
 import Eventos from "../../components/EventosComponent";
 import Parceiros from "../../components/Parceiros";
 
@@ -62,7 +62,7 @@ const Home: React.FC = () => {
         <ContainerMissao>
           <Gasometro src={gasometro} />
           <Missao>
-            <h1>Experiência<br/>Empresa<br/>Júnior</h1>
+            <h1>Trabalhamos<br/>em Rede</h1>
             <ContainerRede>
               <ValoresRede>
                 <h1>+{n_empresas}</h1>
