@@ -60,6 +60,7 @@ import quimlabor  from "../../assets/logos/Quimlabor.png"
 import relab  from "../../assets/logos/Relab.png"
 import renova  from "../../assets/logos/Renova.png"
 import sinc  from "../../assets/logos/Sinc.png"
+import { Helmet } from "react-helmet";
 
 const Rede: React.FC = () => {
   const [active, setActive] = useState(true);
@@ -213,6 +214,11 @@ const Rede: React.FC = () => {
   return (
     <Container>
       <Header />
+
+      <Helmet>
+          <title>NEJ POA - Rede</title>
+          <meta property="og:image" content="../../assets/nejpoa.png" />
+        </Helmet>
       <CloseDropDown 
         className={active ? "" : "active"}
         onClick={handleClick}/>

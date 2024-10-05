@@ -39,13 +39,13 @@ const Home: React.FC = () => {
 
   const [n_empresarios, setN_empresarios] = useState(0);
 	useEffect(() => {
-		if (n_empresarios < 400) {
+		if (n_empresarios < 500) {
 			setTimeout(() => setN_empresarios(prev => prev += 10), 10)
 		}
-		if (n_empresarios >= 400 && n_empresarios < 440) {
+		if (n_empresarios >= 500 && n_empresarios < 540) {
 			setTimeout(() => setN_empresarios(prev => prev += 1), 15)
 		}
-		if (n_empresarios >= 440 && n_empresarios < 450) {
+		if (n_empresarios >= 540 && n_empresarios < 550) {
 			setTimeout(() => setN_empresarios(prev => prev += 1), 80)
 		}
 	},[n_empresarios])

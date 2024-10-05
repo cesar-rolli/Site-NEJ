@@ -5,10 +5,15 @@ import { Container, ContainerDetalhes, FaleConosco } from "./styles";
 import Header from "../../components/Header";
 import Contato from "../../components/Contato";
 import EventosComponent from "../../components/EventosComponent";
+import { Helmet } from "react-helmet";
 
 const Eventos: React.FC = () => {
   return (
     <Container>
+      <Helmet>
+        <title>NEJ POA - Eventos</title>
+        <meta property="og:image" content="../../assets/nejpoa.png" />
+      </Helmet>
       <Header />
 
       <h1>Eventos</h1>

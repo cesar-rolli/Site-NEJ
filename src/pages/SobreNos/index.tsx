@@ -13,11 +13,16 @@ import sobrenos2 from '../../assets/sobre-nos-2.png';
 import sobrenos3 from '../../assets/sobre-nos-3.png';
 import sobrenos4 from '../../assets/sobre-nos-4.png';
 import Contato from "../../components/Contato";
+import { Helmet } from "react-helmet";
 
 const SobreNos: React.FC = () => {
   return(
     <Container>
       <Header />
+        <Helmet>
+          <title>NEJ POA - Sobre nós</title>
+          <meta property="og:image" content="../../assets/nejpoa.png" />
+        </Helmet>
 
       <h1>Sobre Nós</h1>
       <ContainerSobreNos>

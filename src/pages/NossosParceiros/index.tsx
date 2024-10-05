@@ -9,12 +9,17 @@ import bain from '../../assets/bain.png';
 import bat from '../../assets/bat.png';
 import lojasqq from '../../assets/lojasqq.png';
 import v4 from '../../assets/V4.png';
+import { Helmet } from "react-helmet";
 
 const NossosParceiros: React.FC = () => {
   return (
     <Container>
       <Header />
 
+      <Helmet>
+          <title>NEJ POA - Parceiros</title>
+          <meta property="og:image" content="../../assets/nejpoa.png" />
+      </Helmet>
       <h1>Parceiros</h1>
       <WrapperParceiros>
         <WrapperIndividual>
